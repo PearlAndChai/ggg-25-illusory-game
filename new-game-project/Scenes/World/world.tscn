@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://d4juxxwd4d8vk"]
 
-[ext_resource type="PackedScene" uid="uid://clpvadb7hclpt" path="res://Scenes/background.tscn" id="1_go701"]
-[ext_resource type="PackedScene" uid="uid://bc1uueuw0rmnk" path="res://Scenes/Player.tscn" id="2_5a7ea"]
-[ext_resource type="Script" uid="uid://c0ihxd1oekah6" path="res://Scenes/camera_2d.gd" id="3_5a7ea"]
+[ext_resource type="PackedScene" uid="uid://clpvadb7hclpt" path="res://Scenes/Background/background.tscn" id="1_go701"]
+[ext_resource type="PackedScene" uid="uid://bc1uueuw0rmnk" path="res://Scenes/Player/Player.tscn" id="2_5a7ea"]
+[ext_resource type="Script" uid="uid://c0ihxd1oekah6" path="res://Scenes/Player/camera_2d.gd" id="3_5a7ea"]
 
 [node name="World" type="Node2D"]
 
