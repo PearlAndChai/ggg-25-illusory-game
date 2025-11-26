@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="GGG-25-Illusory-Game"
-run/main_scene="uid://bc1uueuw0rmnk"
+run/main_scene="uid://d4juxxwd4d8vk"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 
 [input]
