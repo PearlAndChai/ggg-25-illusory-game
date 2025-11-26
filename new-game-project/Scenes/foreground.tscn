@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://d0degxkvwc5wl"]
+[gd_scene load_steps=5 format=3 uid="uid://d0degxkvwc5wl"]
 
 [ext_resource type="Texture2D" uid="uid://bs82qbs2w3pwp" path="res://assets/Bg attempt 2/Illustration61(12).png" id="1_cj5ll"]
 [ext_resource type="Texture2D" uid="uid://cvf1xg8gms3tl" path="res://assets/Bg attempt 2/Illustration61(9).png" id="2_f0750"]
 [ext_resource type="Texture2D" uid="uid://crpdav2eugjse" path="res://assets/Bg attempt 2/Illustration61(6).png" id="3_3ls55"]
+[ext_resource type="Texture2D" uid="uid://0iw0l7yspu1s" path="res://assets/Bg attempt 2/New stuff for bg/Illustration61(1).png" id="4_f0750"]
 
 [node name="Foreground" type="Node2D"]
 
@@ -15,12 +16,17 @@ position = Vector2(576, 324)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("1_cj5ll")
 
-[node name="Sprite2D" type="Sprite2D" parent="front"]
+[node name="clamshell" type="Sprite2D" parent="front"]
 position = Vector2(576, 324)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("2_f0750")
 
-[node name="Sprite2D2" type="Sprite2D" parent="front"]
+[node name="ball" type="Sprite2D" parent="front"]
 position = Vector2(576, 324)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("3_3ls55")
+
+[node name="sand castle" type="Sprite2D" parent="front"]
+position = Vector2(576, 324)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("4_f0750")

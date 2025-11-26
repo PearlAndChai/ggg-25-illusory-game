@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://clpvadb7hclpt"]
+[gd_scene load_steps=12 format=3 uid="uid://clpvadb7hclpt"]
 
 [ext_resource type="Texture2D" uid="uid://nnv41frkbrfg" path="res://assets/Bg attempt 2/Illustration61(2).png" id="1_1dkp5"]
 [ext_resource type="Texture2D" uid="uid://db31fgyq5ssd1" path="res://assets/Bg attempt 2/Illustration61(8).png" id="2_jn2ok"]
@@ -8,8 +8,9 @@
 [ext_resource type="Texture2D" uid="uid://couek3ew4emcg" path="res://assets/Bg attempt 2/Illustration61(5).png" id="6_fkdu8"]
 [ext_resource type="Texture2D" uid="uid://b8iqpvr3uc04h" path="res://assets/Bg attempt 2/Illustration61(7).png" id="7_kx0mk"]
 [ext_resource type="Texture2D" uid="uid://ckcf7xnhqrxq0" path="res://assets/Bg attempt 2/Illustration61.png" id="8_yfwmw"]
-[ext_resource type="Texture2D" uid="uid://d0krgecuskgno" path="res://assets/Bg attempt 2/Illustration61(11).png" id="9_237w7"]
+[ext_resource type="Texture2D" uid="uid://ccol155bpm6ea" path="res://assets/Bg attempt 2/New stuff for bg/Illustration61.png" id="9_bdh0s"]
 [ext_resource type="Texture2D" uid="uid://wekckft4qtx7" path="res://assets/Bg attempt 2/Illustration61(10).png" id="10_hr31u"]
+[ext_resource type="Texture2D" uid="uid://cbl6tc33p17cw" path="res://assets/Bg attempt 2/New stuff for bg/Illustration61(2).png" id="11_7ys8v"]
 
 [node name="Background" type="Node2D"]
 
@@ -76,9 +77,14 @@ texture = ExtResource("8_yfwmw")
 [node name="starfish" type="Sprite2D" parent="foreground"]
 position = Vector2(576, 324)
 scale = Vector2(0.3, 0.3)
-texture = ExtResource("9_237w7")
+texture = ExtResource("9_bdh0s")
 
 [node name="star" type="Sprite2D" parent="foreground"]
 position = Vector2(576, 324)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("10_hr31u")
+
+[node name="coral" type="Sprite2D" parent="foreground"]
+position = Vector2(576, 324)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("11_7ys8v")
