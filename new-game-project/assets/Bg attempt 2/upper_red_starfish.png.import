@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b3liwfevmq27g"
-path="res://.godot/imported/Illustration61(4).png-d4d50b4c60d5429de291e64f6a7ee1f6.ctex"
+uid="uid://c1nky6owvj6eg"
+path="res://.godot/imported/upper_red_starfish.png-8983064e67e50df82acadaf3f6d24c12.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Bg attempt 2/Illustration61(4).png"
-dest_files=["res://.godot/imported/Illustration61(4).png-d4d50b4c60d5429de291e64f6a7ee1f6.ctex"]
+source_file="res://assets/Bg attempt 2/upper_red_starfish.png"
+dest_files=["res://.godot/imported/upper_red_starfish.png-8983064e67e50df82acadaf3f6d24c12.ctex"]
 
 [params]
 

@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cq1k6pw74sf37"]
 
-[ext_resource type="Texture2D" uid="uid://bpw0vl6dpagjl" path="res://Assets/Bg attempt 2/New stuff for bg/Illustration61(1).png" id="1_x3p4p"]
-[ext_resource type="Texture2D" uid="uid://cwjnhomwqtfyv" path="res://Assets/Bg attempt 2/Illustration61(12).png" id="2_r1nr0"]
+[ext_resource type="Texture2D" uid="uid://bpw0vl6dpagjl" path="res://assets/Bg attempt 2/New stuff for bg/Illustration61(1).png" id="1_x3p4p"]
+[ext_resource type="Texture2D" uid="uid://cwjnhomwqtfyv" path="res://assets/Bg attempt 2/lower_red_starfish.png" id="2_r1nr0"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wosbf"]
 load_path = "res://.godot/imported/Illustration61(6).png-2911d60fbe81308cc804e7a03e66126b.ctex"

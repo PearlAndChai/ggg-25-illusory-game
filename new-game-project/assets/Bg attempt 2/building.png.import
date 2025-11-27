@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bmjstc7qtfg2"
-path="res://.godot/imported/Illustration61(clam).png-a9818efef0898b788b789bc7a25cdefb.ctex"
+uid="uid://b3liwfevmq27g"
+path="res://.godot/imported/building.png-d50347fe28e4d2915e273f7e243217d0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Bg attempt 2/Illustration61(clam).png"
-dest_files=["res://.godot/imported/Illustration61(clam).png-a9818efef0898b788b789bc7a25cdefb.ctex"]
+source_file="res://assets/Bg attempt 2/building.png"
+dest_files=["res://.godot/imported/building.png-d50347fe28e4d2915e273f7e243217d0.ctex"]
 
 [params]
 
