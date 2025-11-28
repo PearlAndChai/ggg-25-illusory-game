@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cwjnhomwqtfyv"
-path="res://.godot/imported/lower_red_starfish.png-ee509fe47a4c8a741d90feac0e95d060.ctex"
+uid="uid://b7ltgux2ag371"
+path="res://.godot/imported/walk-idle.png-c901a34d88a4cb4781ff1fe3ecbbf3e9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Bg attempt 2/lower_red_starfish.png"
-dest_files=["res://.godot/imported/lower_red_starfish.png-ee509fe47a4c8a741d90feac0e95d060.ctex"]
+source_file="res://Assets/walk/walk-idle.png"
+dest_files=["res://.godot/imported/walk-idle.png-c901a34d88a4cb4781ff1fe3ecbbf3e9.ctex"]
 
 [params]
 
