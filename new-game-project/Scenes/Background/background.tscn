@@ -17,12 +17,12 @@
 [node name="sky" type="Parallax2D" parent="."]
 scroll_scale = Vector2(0, 0)
 
-[node name="Sprite2D" type="Sprite2D" parent="sky"]
+[node name="sky" type="Sprite2D" parent="sky"]
 position = Vector2(576, 324)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("1_4osv7")
 
-[node name="Sprite2D2" type="Sprite2D" parent="sky"]
+[node name="red_planet" type="Sprite2D" parent="sky"]
 position = Vector2(576, 324)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("2_yot3y")
@@ -54,7 +54,7 @@ texture = ExtResource("6_5kq6f")
 [node name="Parallax2D2" type="Parallax2D" parent="."]
 repeat_size = Vector2(1152, 0)
 
-[node name="Sprite2D" type="Sprite2D" parent="Parallax2D2"]
+[node name="sand" type="Sprite2D" parent="Parallax2D2"]
 position = Vector2(579.5, 313.49997)
 scale = Vector2(0.3018229, 0.30972221)
 texture = ExtResource("7_dswxj")
@@ -62,22 +62,22 @@ texture = ExtResource("7_dswxj")
 [node name="Parallax2D" type="Parallax2D" parent="."]
 repeat_size = Vector2(1152, 0)
 
-[node name="Sprite2D" type="Sprite2D" parent="Parallax2D"]
+[node name="coral" type="Sprite2D" parent="Parallax2D"]
 position = Vector2(576, 324)
 scale = Vector2(0.3, 0.29999998)
 texture = ExtResource("8_tg7lj")
 
-[node name="Sprite2D2" type="Sprite2D" parent="Parallax2D"]
+[node name="star" type="Sprite2D" parent="Parallax2D"]
 position = Vector2(576, 324)
 scale = Vector2(0.29999998, 0.29999998)
 texture = ExtResource("9_nafhv")
 
-[node name="Sprite2D3" type="Sprite2D" parent="Parallax2D"]
+[node name="top_starfish" type="Sprite2D" parent="Parallax2D"]
 position = Vector2(576, 324)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("10_qfe1l")
 
-[node name="Sprite2D4" type="Sprite2D" parent="Parallax2D"]
+[node name="open_clamshell" type="Sprite2D" parent="Parallax2D"]
 position = Vector2(576, 324)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("11_qg33a")

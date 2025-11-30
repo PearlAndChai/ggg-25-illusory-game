@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://d4juxxwd4d8vk"]
+[gd_scene load_steps=6 format=3 uid="uid://d4juxxwd4d8vk"]
 
-[ext_resource type="PackedScene" uid="uid://clpvadb7hclpt" path="res://Scenes/Background/background.tscn" id="1_go701"]
-[ext_resource type="PackedScene" uid="uid://bc1uueuw0rmnk" path="res://Scenes/Player/Player.tscn" id="2_5a7ea"]
-[ext_resource type="Script" uid="uid://c0ihxd1oekah6" path="res://Scenes/Player/camera_2d.gd" id="3_5a7ea"]
-[ext_resource type="PackedScene" uid="uid://cq1k6pw74sf37" path="res://Scenes/Foreground/foreground.tscn" id="4_vadfg"]
+[ext_resource type="PackedScene" uid="uid://clpvadb7hclpt" path="res://scenes/background/background.tscn" id="1_go701"]
+[ext_resource type="PackedScene" uid="uid://bc1uueuw0rmnk" path="res://scenes/player/Player.tscn" id="2_5a7ea"]
+[ext_resource type="Script" uid="uid://c0ihxd1oekah6" path="res://scenes/player/camera_2d.gd" id="3_5a7ea"]
+[ext_resource type="PackedScene" uid="uid://cq1k6pw74sf37" path="res://scenes/foreground/foreground.tscn" id="4_vadfg"]
+[ext_resource type="PackedScene" uid="uid://dfujy3b6u6i3r" path="res://scenes/enemy/enemy.tscn" id="5_v5dby"]
 
 [node name="World" type="Node2D"]
 
@@ -18,3 +19,6 @@ script = ExtResource("3_5a7ea")
 
 [node name="Foreground" parent="." instance=ExtResource("4_vadfg")]
 position = Vector2(1, 0)
+
+[node name="Enemy" parent="." instance=ExtResource("5_v5dby")]
+position = Vector2(1, 1)

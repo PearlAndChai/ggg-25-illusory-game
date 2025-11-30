@@ -1,26 +1,36 @@
-[gd_scene load_steps=3 format=3 uid="uid://dts766lw3brxy"]
+[gd_scene load_steps=6 format=3 uid="uid://dts766lw3brxy"]
 
-[ext_resource type="Script" uid="uid://yg3shfomalil" path="res://Scenes/Combat/combat.gd" id="1_344jg"]
+[ext_resource type="Script" uid="uid://yg3shfomalil" path="res://scenes/combat/combat.gd" id="1_344jg"]
 [ext_resource type="Texture2D" uid="uid://cddo27nq4nl3k" path="res://assets/image.png" id="2_6e47v"]
+[ext_resource type="PackedScene" uid="uid://ncot40fs31me" path="res://scenes/enemy_one_health_bar/enemy_one_health_bar.tscn" id="3_wm0o0"]
+[ext_resource type="PackedScene" uid="uid://c4mrws3pokygl" path="res://scenes/enemy_two_health_bar/enemy_two_health_bar.tscn" id="4_6h11d"]
+[ext_resource type="PackedScene" uid="uid://vve0ytatamai" path="res://scenes/player_health_bar/player_health_bar.tscn" id="5_x45ga"]
 
 [node name="Combat" type="Node2D"]
 script = ExtResource("1_344jg")
 
-[node name="Use" type="Button" parent="."]
-offset_left = 27.0
-offset_top = 480.0
-offset_right = 283.0
-offset_bottom = 595.0
-text = "Use"
+[node name="EnemyOne" type="Button" parent="."]
+offset_left = 571.0
+offset_top = 174.0
+offset_right = 827.0
+offset_bottom = 289.0
+text = "enemy one"
 
-[node name="backpack_button" type="Button" parent="."]
-offset_left = 320.0
-offset_top = 471.0
-offset_right = 525.0
-offset_bottom = 596.0
+[node name="EnemyTwo" type="Button" parent="."]
+offset_left = 863.0
+offset_top = 142.0
+offset_right = 1119.0
+offset_bottom = 257.0
+text = "enemy two"
+
+[node name="BackpackButton" type="Button" parent="."]
+offset_left = 92.0
+offset_top = 462.0
+offset_right = 297.0
+offset_bottom = 587.0
 text = "Backpack"
 
-[node name="ability_one" type="TextureButton" parent="."]
+[node name="Normal" type="TextureButton" parent="."]
 offset_left = 578.0
 offset_top = 405.0
 offset_right = 759.0
@@ -29,7 +39,7 @@ texture_normal = ExtResource("2_6e47v")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="ability_two" type="TextureButton" parent="."]
+[node name="Special" type="TextureButton" parent="."]
 offset_left = 778.0
 offset_top = 387.0
 offset_right = 927.0
@@ -38,7 +48,7 @@ texture_normal = ExtResource("2_6e47v")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="ability_three" type="TextureButton" parent="."]
+[node name="Super" type="TextureButton" parent="."]
 offset_left = 964.0
 offset_top = 403.0
 offset_right = 1127.0
@@ -47,26 +57,56 @@ texture_normal = ExtResource("2_6e47v")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="backpack" type="Node2D" parent="."]
+[node name="Backpack" type="Node2D" parent="."]
+visible = false
 
-[node name="Book" type="Button" parent="backpack"]
-offset_left = 260.0
-offset_top = 143.0
-offset_right = 452.0
-offset_bottom = 272.0
+[node name="Book" type="Button" parent="Backpack"]
+offset_left = 17.0
+offset_top = 85.0
+offset_right = 209.0
+offset_bottom = 155.0
 text = "book"
 
-[node name="Pencil" type="Button" parent="backpack"]
-offset_left = 549.0
-offset_top = 138.0
-offset_right = 940.0
-offset_bottom = 273.0
+[node name="Apple" type="Button" parent="Backpack"]
+offset_left = 20.0
+offset_top = 250.0
+offset_right = 203.0
+offset_bottom = 306.0
+text = "Apple"
+
+[node name="Pencil" type="Button" parent="Backpack"]
+offset_left = 19.0
+offset_top = 169.0
+offset_right = 211.0
+offset_bottom = 226.0
 text = "pencil"
 
-[connection signal="button_down" from="Use" to="." method="_on_use_button_down"]
-[connection signal="button_down" from="backpack_button" to="." method="_on_inventory_button_down"]
-[connection signal="button_down" from="ability_one" to="." method="_on_ability_one_button_down"]
-[connection signal="button_down" from="ability_two" to="." method="_on_ability_two_button_down"]
-[connection signal="button_down" from="ability_three" to="." method="_on_ability_three_button_down"]
-[connection signal="button_down" from="backpack/Book" to="." method="_on_book_button_down"]
-[connection signal="button_down" from="backpack/Pencil" to="." method="_on_pencil_button_down"]
+[node name="InfoPopup" type="Sprite2D" parent="Backpack"]
+visible = false
+
+[node name="Confirm" type="Button" parent="Backpack/InfoPopup"]
+z_index = 1
+offset_left = 349.0
+offset_top = 274.0
+offset_right = 524.0
+offset_bottom = 335.0
+text = "confirm button"
+
+[node name="EnemyOneHealthBar" parent="." instance=ExtResource("3_wm0o0")]
+position = Vector2(55, -70)
+
+[node name="EnemyTwoHealthBar" parent="." instance=ExtResource("4_6h11d")]
+position = Vector2(80, -11)
+
+[node name="PlayerHealthBar" parent="." instance=ExtResource("5_x45ga")]
+
+[connection signal="button_down" from="EnemyOne" to="." method="_on_enemy_one_button_down"]
+[connection signal="button_down" from="EnemyTwo" to="." method="_on_enemy_two_button_down"]
+[connection signal="button_down" from="BackpackButton" to="." method="_on_backpack_button_down"]
+[connection signal="button_down" from="Normal" to="." method="_on_normal_button_down"]
+[connection signal="button_down" from="Special" to="." method="_on_special_button_down"]
+[connection signal="button_down" from="Super" to="." method="_on_super_button_down"]
+[connection signal="button_down" from="Backpack/Book" to="." method="_on_book_button_down"]
+[connection signal="button_down" from="Backpack/Apple" to="." method="_on_apple_button_down"]
+[connection signal="button_down" from="Backpack/Pencil" to="." method="_on_pencil_button_down"]
+[connection signal="button_down" from="Backpack/InfoPopup/Confirm" to="." method="_on_confirm_button_down"]

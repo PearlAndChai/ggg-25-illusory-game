@@ -4,20 +4,18 @@
 [ext_resource type="Texture2D" uid="uid://cwjnhomwqtfyv" path="res://assets/Bg attempt 2/lower_red_starfish.png" id="2_r1nr0"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wosbf"]
-load_path = "res://.godot/imported/Illustration61(6).png-2911d60fbe81308cc804e7a03e66126b.ctex"
 
 [node name="Foreground" type="Node2D"]
 
 [node name="Parallax2D" type="Parallax2D" parent="."]
-scroll_scale = Vector2(1.5, 1.5)
 repeat_size = Vector2(1152, 0)
 
-[node name="Sprite2D" type="Sprite2D" parent="Parallax2D"]
+[node name="sandcastle" type="Sprite2D" parent="Parallax2D"]
 position = Vector2(576, 324)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("1_x3p4p")
 
-[node name="Sprite2D2" type="Sprite2D" parent="Parallax2D"]
+[node name="starfish" type="Sprite2D" parent="Parallax2D"]
 position = Vector2(576, 324)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("2_r1nr0")

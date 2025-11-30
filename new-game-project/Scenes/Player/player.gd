@@ -1,8 +1,15 @@
 extends CharacterBody2D
 
-const SPEED = 200
+const SPEED = 500
 var x_direction = 0
-func _physics_process(delta: float) -> void:
+
+const FRAMEWIDTH = 1152
+
+func _ready():
+	if global_variables.current_enemy_number > 0:
+		position.x = global_variables.current_enemy_array[0] + FRAMEWIDTH
+
+func _physics_process(_delta: float) -> void:
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	
@@ -19,3 +26,9 @@ func _physics_process(delta: float) -> void:
 		$AnimatedSprite2D.play("idle")
 	velocity.x = x_direction * SPEED
 	move_and_slide()
+	
+func _process(_delta):
+	print("player", position.x)
+	global_variables.player_position = position.x
+	
+	

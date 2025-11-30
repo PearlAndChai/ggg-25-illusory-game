@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://ncot40fs31me"]
+
+[ext_resource type="Script" uid="uid://ctpcp56awr2xi" path="res://scenes/enemy_one_health_bar/enemy_one_health_bar.gd" id="1_pwpcw"]
+
+[node name="EnemyOneHealthBar" type="Node2D"]
+script = ExtResource("1_pwpcw")
+
+[node name="HealthGreen" type="ColorRect" parent="."]
+offset_left = 574.0
+offset_top = 82.0
+offset_right = 624.0
+offset_bottom = 132.0
+color = Color(0, 1, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="HealthRed" type="ColorRect" parent="."]
+offset_left = 624.0
+offset_top = 82.0
+offset_right = 674.0
+offset_bottom = 132.0
+color = Color(1, 0, 0, 1)
+metadata/_edit_use_anchors_ = true

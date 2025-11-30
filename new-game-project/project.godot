@@ -14,6 +14,10 @@ config/name="GGG-25-Illusory-Game"
 run/main_scene="uid://d4juxxwd4d8vk"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 
+[autoload]
+
+global_variables="*res://scenes/global_variables.gd"
+
 [input]
 
 Left={
