@@ -15,9 +15,9 @@ func _physics_process(_delta: float) -> void:
 	
 	if Input.is_action_pressed("Left"):
 		pass
-	#	x_direction = -1
-	#	$AnimatedSprite2D.flip_h = true
-	#	$AnimatedSprite2D.play("walk")
+		x_direction = -1
+		$AnimatedSprite2D.flip_h = true
+		$AnimatedSprite2D.play("walk")
 	elif Input.is_action_pressed("Right"):
 		x_direction = 1
 		$AnimatedSprite2D.flip_h = false

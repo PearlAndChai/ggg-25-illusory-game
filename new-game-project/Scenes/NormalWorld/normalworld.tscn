@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://b6bftkj0giqe5"]
+
+[ext_resource type="Script" uid="uid://boh7xar1qi043" path="res://Scenes/Player/player.gd" id="1_b11ow"]
+[ext_resource type="PackedScene" uid="uid://dbvrk4ll7xkod" path="res://Scenes/NormalBackground/normalbackground.tscn" id="2_13nle"]
+[ext_resource type="PackedScene" uid="uid://gcrusfg42lag" path="res://Scenes/NormalForeground/normalforeground.tscn" id="3_jikog"]
+[ext_resource type="PackedScene" uid="uid://bc1uueuw0rmnk" path="res://Scenes/Player/Player.tscn" id="4_tic4c"]
+
+[node name="Normalworld" type="Node2D"]
+script = ExtResource("1_b11ow")
+
+[node name="Normalbackground" parent="." instance=ExtResource("2_13nle")]
+
+[node name="Player" parent="." instance=ExtResource("4_tic4c")]
+position = Vector2(1276, 224)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+offset = Vector2(-700, 100)
+
+[node name="Normalforeground" parent="." instance=ExtResource("3_jikog")]

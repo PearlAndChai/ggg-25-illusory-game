@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://1atn8pu4x7i3"
-path="res://.godot/imported/coral.png-d54ade31aeeef0e08a8cebb1c3e7884b.ctex"
+path="res://.godot/imported/coral.png-2b82c2984b94b7bd9de8341e58d8c066.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/background/coral.png"
-dest_files=["res://.godot/imported/coral.png-d54ade31aeeef0e08a8cebb1c3e7884b.ctex"]
+source_file="res://Assets/background/coral.png"
+dest_files=["res://.godot/imported/coral.png-2b82c2984b94b7bd9de8341e58d8c066.ctex"]
 
 [params]
 

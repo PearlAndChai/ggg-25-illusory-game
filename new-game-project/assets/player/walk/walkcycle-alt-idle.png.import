@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://comcppmln2kwm"
-path="res://.godot/imported/walkcycle-alt-idle.png-2894c3278ceba9c736596e6d5ff472f3.ctex"
+path="res://.godot/imported/walkcycle-alt-idle.png-9100971c9ae06b4c3522d0058ed4cda7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/walk/walkcycle-alt-idle.png"
-dest_files=["res://.godot/imported/walkcycle-alt-idle.png-2894c3278ceba9c736596e6d5ff472f3.ctex"]
+source_file="res://Assets/player/walk/walkcycle-alt-idle.png"
+dest_files=["res://.godot/imported/walkcycle-alt-idle.png-9100971c9ae06b4c3522d0058ed4cda7.ctex"]
 
 [params]
 

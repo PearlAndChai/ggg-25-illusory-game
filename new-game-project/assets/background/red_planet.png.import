@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://wem7xmp01tte"
-path="res://.godot/imported/red_planet.png-add8dc439e26c4d28b539d263f93711c.ctex"
+path="res://.godot/imported/red_planet.png-40bd9bc73556e07870e4007e288ef80e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/background/red_planet.png"
-dest_files=["res://.godot/imported/red_planet.png-add8dc439e26c4d28b539d263f93711c.ctex"]
+source_file="res://Assets/background/red_planet.png"
+dest_files=["res://.godot/imported/red_planet.png-40bd9bc73556e07870e4007e288ef80e.ctex"]
 
 [params]
 

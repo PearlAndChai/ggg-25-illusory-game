@@ -1,16 +1,16 @@
-[gd_scene load_steps=12 format=3 uid="uid://clpvadb7hclpt"]
+[gd_scene load_steps=12 format=3 uid="uid://ci0t60m7fnfim"]
 
-[ext_resource type="Texture2D" uid="uid://ducdty418xs1b" path="res://assets/background/sky.png" id="1_4osv7"]
-[ext_resource type="Texture2D" uid="uid://wem7xmp01tte" path="res://assets/background/red_planet.png" id="2_yot3y"]
-[ext_resource type="Texture2D" uid="uid://cweabvt44ablp" path="res://assets/background/mountains.png" id="3_nh3ea"]
-[ext_resource type="Texture2D" uid="uid://kqcliss35jnk" path="res://assets/background/yellow_planet.png" id="4_dhl1p"]
-[ext_resource type="Texture2D" uid="uid://mdqblqwfxl4c" path="res://assets/background/purple_planet.png" id="5_iwacn"]
-[ext_resource type="Texture2D" uid="uid://b3liwfevmq27g" path="res://assets/background/building.png" id="6_5kq6f"]
-[ext_resource type="Texture2D" uid="uid://cgdk0saw210ee" path="res://assets/background/sand.png" id="7_dswxj"]
-[ext_resource type="Texture2D" uid="uid://1atn8pu4x7i3" path="res://assets/background/coral.png" id="8_tg7lj"]
-[ext_resource type="Texture2D" uid="uid://bnfyvpncd2kjj" path="res://assets/background/yellow_starfish.png" id="9_nafhv"]
-[ext_resource type="Texture2D" uid="uid://bh737om5dutcw" path="res://assets/background/upper_red_starfish_2.png" id="10_qfe1l"]
-[ext_resource type="Texture2D" uid="uid://bmjstc7qtfg2" path="res://assets/background/open_clamshell.png" id="11_qg33a"]
+[ext_resource type="Texture2D" uid="uid://ducdty418xs1b" path="res://Assets/background/sky.png" id="1_07ble"]
+[ext_resource type="Texture2D" uid="uid://wem7xmp01tte" path="res://Assets/background/red_planet.png" id="2_2xxo3"]
+[ext_resource type="Texture2D" uid="uid://cweabvt44ablp" path="res://Assets/background/mountains.png" id="3_ydv0g"]
+[ext_resource type="Texture2D" uid="uid://kqcliss35jnk" path="res://Assets/background/yellow_planet.png" id="4_snbmv"]
+[ext_resource type="Texture2D" uid="uid://mdqblqwfxl4c" path="res://Assets/background/purple_planet.png" id="5_vka6n"]
+[ext_resource type="Texture2D" uid="uid://b3liwfevmq27g" path="res://Assets/background/building.png" id="6_fn1kn"]
+[ext_resource type="Texture2D" uid="uid://cgdk0saw210ee" path="res://Assets/background/sand.png" id="7_f351g"]
+[ext_resource type="Texture2D" uid="uid://1atn8pu4x7i3" path="res://Assets/background/coral.png" id="8_xr87e"]
+[ext_resource type="Texture2D" uid="uid://bnfyvpncd2kjj" path="res://Assets/background/yellow_starfish.png" id="9_54wun"]
+[ext_resource type="Texture2D" uid="uid://bh737om5dutcw" path="res://Assets/background/upper_red_starfish_2.png" id="10_s0ije"]
+[ext_resource type="Texture2D" uid="uid://bmjstc7qtfg2" path="res://Assets/background/open_clamshell.png" id="11_1m4gf"]
 
 [node name="Background" type="Node2D"]
 
@@ -20,12 +20,12 @@ scroll_scale = Vector2(0, 0)
 [node name="sky" type="Sprite2D" parent="sky"]
 position = Vector2(576, 324)
 scale = Vector2(0.3, 0.3)
-texture = ExtResource("1_4osv7")
+texture = ExtResource("1_07ble")
 
 [node name="red_planet" type="Sprite2D" parent="sky"]
 position = Vector2(576, 324)
 scale = Vector2(0.3, 0.3)
-texture = ExtResource("2_yot3y")
+texture = ExtResource("2_2xxo3")
 
 [node name="background" type="Parallax2D" parent="."]
 scroll_scale = Vector2(0.5, 0.5)
@@ -34,22 +34,22 @@ repeat_size = Vector2(1152, 0)
 [node name="rocks" type="Sprite2D" parent="background"]
 position = Vector2(579.5, 348.5)
 scale = Vector2(0.3018229, 0.32268518)
-texture = ExtResource("3_nh3ea")
+texture = ExtResource("3_ydv0g")
 
 [node name="ball" type="Sprite2D" parent="background"]
 position = Vector2(576, 324.00003)
 scale = Vector2(0.3, 0.3)
-texture = ExtResource("4_dhl1p")
+texture = ExtResource("4_snbmv")
 
 [node name="planet" type="Sprite2D" parent="background"]
 position = Vector2(575.99994, 324.49997)
 scale = Vector2(0.29999998, 0.30046296)
-texture = ExtResource("5_iwacn")
+texture = ExtResource("5_vka6n")
 
 [node name="building" type="Sprite2D" parent="background"]
 position = Vector2(574, 355)
 scale = Vector2(0.29973957, 0.3277778)
-texture = ExtResource("6_5kq6f")
+texture = ExtResource("6_fn1kn")
 
 [node name="Parallax2D2" type="Parallax2D" parent="."]
 repeat_size = Vector2(1152, 0)
@@ -57,7 +57,7 @@ repeat_size = Vector2(1152, 0)
 [node name="sand" type="Sprite2D" parent="Parallax2D2"]
 position = Vector2(579.5, 313.49997)
 scale = Vector2(0.3018229, 0.30972221)
-texture = ExtResource("7_dswxj")
+texture = ExtResource("7_f351g")
 
 [node name="Parallax2D" type="Parallax2D" parent="."]
 repeat_size = Vector2(1152, 0)
@@ -65,19 +65,19 @@ repeat_size = Vector2(1152, 0)
 [node name="coral" type="Sprite2D" parent="Parallax2D"]
 position = Vector2(576, 324)
 scale = Vector2(0.3, 0.29999998)
-texture = ExtResource("8_tg7lj")
+texture = ExtResource("8_xr87e")
 
 [node name="star" type="Sprite2D" parent="Parallax2D"]
 position = Vector2(576, 324)
 scale = Vector2(0.29999998, 0.29999998)
-texture = ExtResource("9_nafhv")
+texture = ExtResource("9_54wun")
 
 [node name="top_starfish" type="Sprite2D" parent="Parallax2D"]
 position = Vector2(576, 324)
 scale = Vector2(0.3, 0.3)
-texture = ExtResource("10_qfe1l")
+texture = ExtResource("10_s0ije")
 
 [node name="open_clamshell" type="Sprite2D" parent="Parallax2D"]
 position = Vector2(576, 324)
 scale = Vector2(0.3, 0.3)
-texture = ExtResource("11_qg33a")
+texture = ExtResource("11_1m4gf")

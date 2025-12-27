@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://l0crcp7yy8un"
-path="res://.godot/imported/walkcycle-alt-7.png-e516be3d983210ee10edd776218e88b3.ctex"
+path="res://.godot/imported/walkcycle-alt-7.png-a4cba02853d1b37420f3692d5162ea1b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/walk/walkcycle-alt-7.png"
-dest_files=["res://.godot/imported/walkcycle-alt-7.png-e516be3d983210ee10edd776218e88b3.ctex"]
+source_file="res://Assets/player/walk/walkcycle-alt-7.png"
+dest_files=["res://.godot/imported/walkcycle-alt-7.png-a4cba02853d1b37420f3692d5162ea1b.ctex"]
 
 [params]
 

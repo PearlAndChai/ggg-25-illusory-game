@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bv0dxo0of1ky2"
-path="res://.godot/imported/closed_clamshell.png-630b9b2630e334796b3cb428db4c991a.ctex"
+path="res://.godot/imported/closed_clamshell.png-627178becef91fe0ff73029bce1a2a4a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/background/closed_clamshell.png"
-dest_files=["res://.godot/imported/closed_clamshell.png-630b9b2630e334796b3cb428db4c991a.ctex"]
+source_file="res://Assets/background/closed_clamshell.png"
+dest_files=["res://.godot/imported/closed_clamshell.png-627178becef91fe0ff73029bce1a2a4a.ctex"]
 
 [params]
 

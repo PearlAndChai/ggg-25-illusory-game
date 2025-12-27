@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://coqti7e2p06k0"
-path="res://.godot/imported/enemy1animations-mic-attack-00.png-e6f90cc6f39786f0661619050494d825.ctex"
+path="res://.godot/imported/enemy1animations-mic-attack-00.png-9efa553ffc81b331975a785c5020438a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/enemies_combat/grandmother/attack/enemy1animations-mic-attack-00.png"
-dest_files=["res://.godot/imported/enemy1animations-mic-attack-00.png-e6f90cc6f39786f0661619050494d825.ctex"]
+source_file="res://Assets/enemies_combat/grandmother/attack/enemy1animations-mic-attack-00.png"
+dest_files=["res://.godot/imported/enemy1animations-mic-attack-00.png-9efa553ffc81b331975a785c5020438a.ctex"]
 
 [params]
 

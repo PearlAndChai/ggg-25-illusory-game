@@ -1,16 +1,16 @@
 [gd_scene load_steps=8 format=3 uid="uid://d4juxxwd4d8vk"]
 
-[ext_resource type="PackedScene" uid="uid://clpvadb7hclpt" path="res://scenes/background/background.tscn" id="1_x8qfb"]
-[ext_resource type="PackedScene" uid="uid://bc1uueuw0rmnk" path="res://scenes/Player/Player.tscn" id="2_o0828"]
-[ext_resource type="Script" uid="uid://c0ihxd1oekah6" path="res://scenes/Player/camera_2d.gd" id="3_12diy"]
-[ext_resource type="PackedScene" uid="uid://cq1k6pw74sf37" path="res://scenes/foreground/foreground.tscn" id="4_5jrsn"]
-[ext_resource type="PackedScene" uid="uid://dfujy3b6u6i3r" path="res://scenes/enemy/enemy.tscn" id="5_pbr1s"]
-[ext_resource type="Texture2D" uid="uid://nwt550yo5vjs" path="res://assets/buildings/house.png" id="6_tspqu"]
-[ext_resource type="Texture2D" uid="uid://3efe6k1ux3o5" path="res://assets/buildings/school.png" id="7_77064"]
+[ext_resource type="PackedScene" uid="uid://ci0t60m7fnfim" path="res://Scenes/IllusoryBackground/illusorybackground.tscn" id="1_7staa"]
+[ext_resource type="PackedScene" uid="uid://bc1uueuw0rmnk" path="res://Scenes/Player/Player.tscn" id="2_o0828"]
+[ext_resource type="Script" uid="uid://c0ihxd1oekah6" path="res://Scenes/Player/camera_2d.gd" id="3_12diy"]
+[ext_resource type="PackedScene" uid="uid://cq1k6pw74sf37" path="res://Scenes/IllusoryForeground/illusoryforeground.tscn" id="4_5jrsn"]
+[ext_resource type="PackedScene" uid="uid://dfujy3b6u6i3r" path="res://Scenes/enemy/enemy.tscn" id="5_pbr1s"]
+[ext_resource type="Texture2D" uid="uid://nwt550yo5vjs" path="res://Assets/buildings/house.png" id="6_tspqu"]
+[ext_resource type="Texture2D" uid="uid://3efe6k1ux3o5" path="res://Assets/buildings/school.png" id="7_77064"]
 
 [node name="World" type="Node2D"]
 
-[node name="Background" parent="." instance=ExtResource("1_x8qfb")]
+[node name="Background2" parent="." instance=ExtResource("1_7staa")]
 
 [node name="Player" parent="." instance=ExtResource("2_o0828")]
 position = Vector2(577, 324)
@@ -32,3 +32,6 @@ texture = ExtResource("6_tspqu")
 [node name="School" type="Sprite2D" parent="."]
 position = Vector2(9700, 327)
 texture = ExtResource("7_77064")
+
+[node name="Foreground2" parent="." instance=ExtResource("4_5jrsn")]
+position = Vector2(1, 0)
