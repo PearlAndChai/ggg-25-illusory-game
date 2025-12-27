@@ -1,41 +1,34 @@
-[gd_scene load_steps=10 format=3 uid="uid://d4juxxwd4d8vk"]
+[gd_scene load_steps=8 format=3 uid="uid://d4juxxwd4d8vk"]
 
-[ext_resource type="PackedScene" uid="uid://clpvadb7hclpt" path="res://scenes/Background/background_dream.tscn" id="1_go701"]
-[ext_resource type="PackedScene" uid="uid://bc1uueuw0rmnk" path="res://scenes/player/Player.tscn" id="2_5a7ea"]
-[ext_resource type="Script" uid="uid://c0ihxd1oekah6" path="res://scenes/player/camera_2d.gd" id="3_5a7ea"]
-[ext_resource type="PackedScene" uid="uid://cq1k6pw74sf37" path="res://scenes/Foreground/foreground_dream.tscn" id="4_vadfg"]
-[ext_resource type="PackedScene" uid="uid://dfujy3b6u6i3r" path="res://scenes/enemy/enemy.tscn" id="5_v5dby"]
-[ext_resource type="Texture2D" uid="uid://nwt550yo5vjs" path="res://assets/buildings/house.png" id="6_bq33v"]
-[ext_resource type="Texture2D" uid="uid://3efe6k1ux3o5" path="res://assets/buildings/school.png" id="7_j2gmx"]
-[ext_resource type="PackedScene" uid="uid://ckgq4174nne4v" path="res://scenes/Background/background_suburban.tscn" id="8_ng6hi"]
-[ext_resource type="PackedScene" uid="uid://bieces0dppvnh" path="res://scenes/Foreground/foreground_suburban.tscn" id="9_8x3r3"]
+[ext_resource type="PackedScene" uid="uid://clpvadb7hclpt" path="res://scenes/background/background.tscn" id="1_x8qfb"]
+[ext_resource type="PackedScene" uid="uid://bc1uueuw0rmnk" path="res://scenes/Player/Player.tscn" id="2_o0828"]
+[ext_resource type="Script" uid="uid://c0ihxd1oekah6" path="res://scenes/Player/camera_2d.gd" id="3_12diy"]
+[ext_resource type="PackedScene" uid="uid://cq1k6pw74sf37" path="res://scenes/foreground/foreground.tscn" id="4_5jrsn"]
+[ext_resource type="PackedScene" uid="uid://dfujy3b6u6i3r" path="res://scenes/enemy/enemy.tscn" id="5_pbr1s"]
+[ext_resource type="Texture2D" uid="uid://nwt550yo5vjs" path="res://assets/buildings/house.png" id="6_tspqu"]
+[ext_resource type="Texture2D" uid="uid://3efe6k1ux3o5" path="res://assets/buildings/school.png" id="7_77064"]
 
 [node name="World" type="Node2D"]
 
-[node name="BackgroundDream" parent="." instance=ExtResource("1_go701")]
+[node name="Background" parent="." instance=ExtResource("1_x8qfb")]
 
-[node name="Player" parent="." instance=ExtResource("2_5a7ea")]
+[node name="Player" parent="." instance=ExtResource("2_o0828")]
 position = Vector2(577, 324)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(0.1015625, -0.0546875)
-script = ExtResource("3_5a7ea")
+script = ExtResource("3_12diy")
 
-[node name="ForegroundDream" parent="." instance=ExtResource("4_vadfg")]
+[node name="Foreground" parent="." instance=ExtResource("4_5jrsn")]
 position = Vector2(1, 0)
 
-[node name="Enemy" parent="." instance=ExtResource("5_v5dby")]
+[node name="Enemy" parent="." instance=ExtResource("5_pbr1s")]
 position = Vector2(1, 1)
 
 [node name="House" type="Sprite2D" parent="."]
 position = Vector2(-252, 355)
-texture = ExtResource("6_bq33v")
+texture = ExtResource("6_tspqu")
 
 [node name="School" type="Sprite2D" parent="."]
 position = Vector2(9700, 327)
-texture = ExtResource("7_j2gmx")
-
-[node name="BackgroundSuburban" parent="." instance=ExtResource("8_ng6hi")]
-position = Vector2(1, 0)
-
-[node name="ForegroundSuburban" parent="." instance=ExtResource("9_8x3r3")]
+texture = ExtResource("7_77064")
