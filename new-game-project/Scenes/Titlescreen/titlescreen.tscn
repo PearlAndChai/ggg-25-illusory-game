@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=3 uid="uid://bws35pkbg4y07"]
+
+[ext_resource type="Texture2D" uid="uid://b3tyrmkijk6q3" path="res://Assets/titlescreen/titlescreen-bg.png" id="1_y83an"]
+[ext_resource type="Texture2D" uid="uid://c1lnbxbewjw61" path="res://Assets/titlescreen/titlescreen-button.png" id="2_dlu5n"]
+[ext_resource type="Texture2D" uid="uid://bntta0w7100ya" path="res://Assets/titlescreen/titlescreen-button-highlight.png" id="3_4q3s2"]
+[ext_resource type="Script" uid="uid://co2mcqdk2a171" path="res://Scenes/Titlescreen/texture_button.gd" id="4_xcbsp"]
+[ext_resource type="Texture2D" uid="uid://vswtip681chq" path="res://Assets/titlescreen/titlescreen-lucy.png" id="5_ck4mm"]
+[ext_resource type="Texture2D" uid="uid://ci6xcxsdaab54" path="res://Assets/titlescreen/titlescreen-title.png" id="6_rn6u0"]
+
+[node name="Titlescreen" type="Node2D"]
+
+[node name="TitlescreenBg" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_y83an")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.3, 0.3)
+texture_normal = ExtResource("2_dlu5n")
+texture_hover = ExtResource("3_4q3s2")
+script = ExtResource("4_xcbsp")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("5_ck4mm")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("6_rn6u0")
+
+[connection signal="button_down" from="TextureButton" to="TextureButton" method="_on_button_down"]
