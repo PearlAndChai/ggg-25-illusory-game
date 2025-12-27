@@ -1,11 +1,115 @@
-[gd_scene load_steps=3 format=3 uid="uid://dfujy3b6u6i3r"]
+[gd_scene load_steps=21 format=3 uid="uid://dfujy3b6u6i3r"]
 
 [ext_resource type="Script" uid="uid://c3r2s1fmlacjh" path="res://scenes/enemy/enemy.gd" id="1_4a83h"]
-[ext_resource type="Texture2D" uid="uid://gynnr04oonyy" path="res://assets/image.png.webp" id="2_a3pup"]
+[ext_resource type="Texture2D" uid="uid://b4cjqcq0u8qqt" path="res://assets/enemies_combat/grandmother/idle/enemy1idle-0.png" id="2_13gj6"]
+[ext_resource type="Texture2D" uid="uid://cvt36s8qsv036" path="res://assets/enemies_combat/female_bully/idle/enemy2.1-idle-0.png" id="2_dtxhd"]
+[ext_resource type="Texture2D" uid="uid://crw6cavu2txt" path="res://assets/enemies_combat/grandmother/idle/enemy1idle-1.png" id="3_4efjx"]
+[ext_resource type="Texture2D" uid="uid://b3l6ubftmbduk" path="res://assets/enemies_combat/female_bully/idle/enemy2.1-idle-4.png" id="3_so3kp"]
+[ext_resource type="Texture2D" uid="uid://dxkxi58ls62ri" path="res://assets/enemies_combat/female_bully/idle/enemy2.1-idle-2.png" id="4_5woo5"]
+[ext_resource type="Texture2D" uid="uid://bvyk88h1vwc2m" path="res://assets/enemies_combat/grandmother/idle/enemy1idle-2.png" id="4_hvxgb"]
+[ext_resource type="Texture2D" uid="uid://csaeomm0bv2m4" path="res://assets/enemies_combat/female_bully/idle/enemy2.1-idle-6.png" id="5_pb0yv"]
+[ext_resource type="Texture2D" uid="uid://b0g7aaa6iam7j" path="res://assets/enemies_combat/grandmother/idle/enemy1idle-3.png" id="5_peoo5"]
+[ext_resource type="Texture2D" uid="uid://ccavg7chej5sf" path="res://assets/enemies_combat/grandmother/idle/enemy1idle-4.png" id="6_2f3il"]
+[ext_resource type="Texture2D" uid="uid://deomkpjtbqjfe" path="res://assets/enemies_combat/female_bully/idle/enemy2.1-idle-8.png" id="6_prup0"]
+[ext_resource type="Texture2D" uid="uid://cc1skmpclgan6" path="res://assets/enemies_combat/grandmother/idle/enemy1idle-5.png" id="7_dtxhd"]
+[ext_resource type="Texture2D" uid="uid://bcbffj5j77elr" path="res://assets/enemies_combat/grandmother/idle/enemy1idle-6.png" id="8_so3kp"]
+[ext_resource type="Texture2D" uid="uid://ratynadr5m3w" path="res://assets/enemies_combat/male_bully/idle/enemy2.2-idle-0.png" id="14_dxjon"]
+[ext_resource type="Texture2D" uid="uid://dnul2xvqbs30b" path="res://assets/enemies_combat/male_bully/idle/enemy2.2-idle-2.png" id="15_f5q6l"]
+[ext_resource type="Texture2D" uid="uid://c0mv48ux3u35t" path="res://assets/enemies_combat/male_bully/idle/enemy2.2-idle-4.png" id="16_8ed2q"]
+[ext_resource type="Texture2D" uid="uid://ojojhj8ceh2l" path="res://assets/enemies_combat/male_bully/idle/enemy2.2-idle-6.png" id="17_wk82e"]
+[ext_resource type="Texture2D" uid="uid://bks4ge0obyv4y" path="res://assets/enemies_combat/male_bully/idle/enemy2.2-idle-8.png" id="18_bsmli"]
 
-[node name="Enemy" type="Sprite2D"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_5woo5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_dtxhd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5woo5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_so3kp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_pb0yv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_prup0")
+}],
+"loop": true,
+"name": &"bully",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_13gj6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_4efjx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_hvxgb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_peoo5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_2f3il")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_dtxhd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_so3kp")
+}],
+"loop": true,
+"name": &"grandmother",
+"speed": 8.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cicna"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_dxjon")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_f5q6l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_8ed2q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_wk82e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_bsmli")
+}],
+"loop": true,
+"name": &"bully",
+"speed": 4.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[node name="Enemy" type="Node2D"]
 script = ExtResource("1_4a83h")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(933, 299)
-texture = ExtResource("2_a3pup")
+[node name="AnimatedSprite2DOne" type="AnimatedSprite2D" parent="."]
+position = Vector2(577, 324)
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_5woo5")
+animation = &"bully"
+autoplay = "grandmother"
+
+[node name="AnimatedSprite2DTwo" type="AnimatedSprite2D" parent="."]
+z_index = 1
+position = Vector2(576, 324)
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_cicna")
+animation = &"new_animation"
+autoplay = "new_animation"

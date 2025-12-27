@@ -14,12 +14,13 @@ func _physics_process(_delta: float) -> void:
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	
 	if Input.is_action_pressed("Left"):
-		x_direction = -1
-		$AnimatedSprite2D.flip_h = false
-		$AnimatedSprite2D.play("walk")
+		pass
+	#	x_direction = -1
+	#	$AnimatedSprite2D.flip_h = true
+	#	$AnimatedSprite2D.play("walk")
 	elif Input.is_action_pressed("Right"):
 		x_direction = 1
-		$AnimatedSprite2D.flip_h = true
+		$AnimatedSprite2D.flip_h = false
 		$AnimatedSprite2D.play("walk")
 	else:
 		x_direction = 0
@@ -28,7 +29,6 @@ func _physics_process(_delta: float) -> void:
 	move_and_slide()
 	
 func _process(_delta):
-	print("player", position.x)
 	global_variables.player_position = position.x
 	
 	
