@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://d4juxxwd4d8vk"]
+[gd_scene load_steps=9 format=3 uid="uid://d4juxxwd4d8vk"]
 
 [ext_resource type="PackedScene" uid="uid://ci0t60m7fnfim" path="res://scenes/illusory_background/illusorybackground.tscn" id="1_7staa"]
 [ext_resource type="PackedScene" uid="uid://bc1uueuw0rmnk" path="res://scenes/player/Player.tscn" id="2_o0828"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://dfujy3b6u6i3r" path="res://scenes/enemy/enemy.tscn" id="5_pbr1s"]
 [ext_resource type="Texture2D" uid="uid://fchdqggp6fgf" path="res://assets/buildings/house_dream.png" id="6_bq33v"]
 [ext_resource type="Texture2D" uid="uid://4knk1vm4mkf2" path="res://assets/buildings/IMG_8650.PNG" id="7_bq33v"]
+[ext_resource type="AudioStream" uid="uid://c5qmy0iuqitwf" path="res://sounds/music/Illusory world walking.mp3" id="8_j2gmx"]
 
 [node name="World" type="Node2D"]
 
@@ -39,3 +40,7 @@ texture = ExtResource("7_bq33v")
 [node name="Foreground2" parent="." instance=ExtResource("4_5jrsn")]
 z_index = 2
 position = Vector2(1, 0)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_j2gmx")
+autoplay = true

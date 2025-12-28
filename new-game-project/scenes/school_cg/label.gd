@@ -54,7 +54,7 @@ func _ready():
 	for i in dialogue.size():
 		frame = i
 		text = dialogue[i]
-		await get_tree().create_timer(0.1).timeout
+		await get_tree().create_timer(2.0).timeout
 		
 func _process(_delta):
 		if frame == 0:
@@ -66,6 +66,6 @@ func _process(_delta):
 		if frame == 35:
 			door.visible = true
 			
-		if frame == 31:
+		if frame == 38:
 			look_door.visible = true
 		

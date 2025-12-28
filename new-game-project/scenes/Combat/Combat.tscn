@@ -1,4 +1,4 @@
-[gd_scene load_steps=145 format=3 uid="uid://dts766lw3brxy"]
+[gd_scene load_steps=146 format=3 uid="uid://dts766lw3brxy"]
 
 [ext_resource type="Script" uid="uid://yg3shfomalil" path="res://scenes/combat/combat.gd" id="1_2mlh8"]
 [ext_resource type="Texture2D" uid="uid://dfk8vbx3tn0xd" path="res://assets/enemies_combat/grandmother/idle/enemy1idle-0.png" id="2_62wyw"]
@@ -139,6 +139,7 @@
 [ext_resource type="Texture2D" uid="uid://8x4qy0t45dql" path="res://assets/player/pencil/mc-attack-pencil-5.png" id="137_6olwr"]
 [ext_resource type="Texture2D" uid="uid://bvbpuxw225axo" path="res://assets/player/pencil/mc-attack-pencil-6.png" id="138_c2o1f"]
 [ext_resource type="Texture2D" uid="uid://d16ckvu8kqubj" path="res://assets/ui/Adrift__1_-removebg-preview.png" id="139_6ukfb"]
+[ext_resource type="AudioStream" uid="uid://cwi3vv6sxfgpg" path="res://sounds/music/Battle.mp3" id="140_62wyw"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_3hhx1"]
 animations = [{
@@ -697,6 +698,10 @@ z_index = 11
 position = Vector2(995, 124)
 scale = Vector2(2.5312102, 1.9506665)
 texture = ExtResource("139_6ukfb")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("140_62wyw")
+autoplay = true
 
 [connection signal="button_down" from="EnemyOne/EnemyOneButton" to="." method="_on_enemy_one_button_down"]
 [connection signal="button_down" from="EnemyTwo/EnemyTwoButton" to="." method="_on_enemy_two_button_down"]

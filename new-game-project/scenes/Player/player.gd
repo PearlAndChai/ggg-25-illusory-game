@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const SPEED = 2000
+const SPEED = 500
 var x_direction = 0
 
 const FRAMEWIDTH = 1152
@@ -50,6 +50,9 @@ func _process(_delta):
 	
 	if position.x < -3208 + 400 and global_variables.grandma_dialogue_ran == false:
 		global_variables.reached_grandma = true
+
+	if position.x >= 7348.0:
+		get_tree().change_scene_to_file("res://scenes/school_cg/node_2d.tscn")
 
 	
 	

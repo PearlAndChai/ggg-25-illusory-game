@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://b0st7eu5w810x"]
+[gd_scene load_steps=11 format=3 uid="uid://b0st7eu5w810x"]
 
 [ext_resource type="Texture2D" uid="uid://br800amdc5xft" path="res://assets/school_cg/people/lucysprites-smile.png" id="1_8w4ee"]
 [ext_resource type="Texture2D" uid="uid://tkhj24j5lbkn" path="res://assets/school_cg/IMG_8659.PNG" id="2_81rsw"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://caa8jmeorcvw" path="res://assets/school_cg/people/guysprites-talking.png" id="5_42us0"]
 [ext_resource type="Texture2D" uid="uid://n7u3akb6oy1i" path="res://assets/ui/dialoguebox.png" id="6_81rsw"]
 [ext_resource type="Script" uid="uid://dekra5dnumk4e" path="res://scenes/school_cg/label.gd" id="8_42us0"]
+[ext_resource type="AudioStream" uid="uid://cgbq3xs7375qj" path="res://sounds/music/Endcgsong.mp3" id="9_42us0"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_81rsw"]
 font_size = 17
@@ -56,3 +57,7 @@ label_settings = SubResource("LabelSettings_81rsw")
 horizontal_alignment = 1
 script = ExtResource("8_42us0")
 metadata/_edit_use_anchors_ = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_42us0")
+autoplay = true

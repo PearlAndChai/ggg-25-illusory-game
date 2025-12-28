@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://b6bftkj0giqe5"]
+[gd_scene load_steps=15 format=3 uid="uid://b6bftkj0giqe5"]
 
 [ext_resource type="Script" uid="uid://boh7xar1qi043" path="res://scenes/player/player.gd" id="1_b11ow"]
 [ext_resource type="PackedScene" uid="uid://dbvrk4ll7xkod" path="res://scenes/normal_background/normalbackground.tscn" id="2_13nle"]
@@ -12,6 +12,7 @@
 [ext_resource type="Script" uid="uid://dgyj5owpyophl" path="res://scenes/normal_world/label.gd" id="10_5drdg"]
 [ext_resource type="Script" uid="uid://c6vsx5o7voj6f" path="res://scenes/normal_world/dialogue.gd" id="10_bsunj"]
 [ext_resource type="Texture2D" uid="uid://n7u3akb6oy1i" path="res://assets/ui/dialoguebox.png" id="11_bsunj"]
+[ext_resource type="AudioStream" uid="uid://y01vw7akkuet" path="res://sounds/music/Mainworldwalkingtheme.mp3" id="13_5ewec"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_byikt"]
 font_size = 20
@@ -80,3 +81,7 @@ offset_bottom = 608.0
 label_settings = SubResource("LabelSettings_byikt")
 horizontal_alignment = 1
 script = ExtResource("10_5drdg")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("13_5ewec")
+autoplay = true
