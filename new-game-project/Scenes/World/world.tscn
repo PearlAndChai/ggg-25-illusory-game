@@ -1,46 +1,65 @@
-[gd_scene load_steps=9 format=3 uid="uid://d4juxxwd4d8vk"]
+[gd_scene load_steps=11 format=3 uid="uid://d4juxxwd4d8vk"]
 
-[ext_resource type="PackedScene" uid="uid://ci0t60m7fnfim" path="res://scenes/illusory_background/illusorybackground.tscn" id="1_7staa"]
-[ext_resource type="PackedScene" uid="uid://bc1uueuw0rmnk" path="res://scenes/player/Player.tscn" id="2_o0828"]
-[ext_resource type="Script" uid="uid://c0ihxd1oekah6" path="res://scenes/player/camera_2d.gd" id="3_12diy"]
-[ext_resource type="PackedScene" uid="uid://cq1k6pw74sf37" path="res://scenes/illusory_foreground/illusoryforeground.tscn" id="4_5jrsn"]
-[ext_resource type="PackedScene" uid="uid://dfujy3b6u6i3r" path="res://scenes/enemy/enemy.tscn" id="5_pbr1s"]
-[ext_resource type="Texture2D" uid="uid://fchdqggp6fgf" path="res://assets/buildings/house_dream.png" id="6_bq33v"]
-[ext_resource type="Texture2D" uid="uid://4knk1vm4mkf2" path="res://assets/buildings/IMG_8650.PNG" id="7_bq33v"]
-[ext_resource type="AudioStream" uid="uid://c5qmy0iuqitwf" path="res://sounds/music/Illusory world walking.mp3" id="8_j2gmx"]
+[ext_resource type="Texture2D" uid="uid://8fnl42m517xk" path="res://assets/house_cgs/IMG_8799.PNG" id="1_j2gmx"]
+[ext_resource type="Texture2D" uid="uid://bixeqsnl54q7s" path="res://assets/house_cgs/IMG_8798.PNG" id="2_1yooq"]
+[ext_resource type="Texture2D" uid="uid://cbh33v46mhypa" path="res://assets/house_cgs/IMG_8821.PNG" id="3_gb53w"]
+[ext_resource type="Texture2D" uid="uid://ctn320s0un0fo" path="res://assets/house_cgs/IMG_8810.PNG" id="4_5qq27"]
+[ext_resource type="Script" uid="uid://by7sp04l8qood" path="res://scenes/house_cg/animated_sprite_2d.gd" id="5_dlabj"]
+[ext_resource type="AudioStream" uid="uid://cch3a1gr03jhj" path="res://sounds/music/Mysteriouscatcg.mp3" id="6_srmg5"]
+[ext_resource type="Texture2D" uid="uid://n7u3akb6oy1i" path="res://assets/ui/dialoguebox.png" id="7_umvgx"]
+[ext_resource type="Script" uid="uid://c7mk0h8f3a54v" path="res://scenes/house_cg/label.gd" id="8_mxkvs"]
 
-[node name="World" type="Node2D"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_266vn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_j2gmx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_1yooq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_gb53w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_gb53w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5qq27")
+}],
+"loop": false,
+"name": &"default",
+"speed": 0.5
+}]
 
-[node name="Background2" parent="." instance=ExtResource("1_7staa")]
+[sub_resource type="LabelSettings" id="LabelSettings_xwqhv"]
+font_size = 20
 
-[node name="Player" parent="." instance=ExtResource("2_o0828")]
-z_index = 1
-position = Vector2(577, 324)
+[node name="Node2D" type="Node2D"]
 
-[node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(0.1015625, -0.0546875)
-script = ExtResource("3_12diy")
-
-[node name="Foreground" parent="." instance=ExtResource("4_5jrsn")]
-position = Vector2(1, 0)
-
-[node name="Enemy" parent="." instance=ExtResource("5_pbr1s")]
-position = Vector2(1, 1)
-
-[node name="House" type="Sprite2D" parent="."]
-position = Vector2(-252, 324)
+[node name="HouseSprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(576, 324)
 scale = Vector2(0.3, 0.3)
-texture = ExtResource("6_bq33v")
-
-[node name="School" type="Sprite2D" parent="."]
-position = Vector2(7348, 324)
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("7_bq33v")
-
-[node name="Foreground2" parent="." instance=ExtResource("4_5jrsn")]
-z_index = 2
-position = Vector2(1, 0)
+sprite_frames = SubResource("SpriteFrames_266vn")
+autoplay = "default"
+script = ExtResource("5_dlabj")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("8_j2gmx")
+stream = ExtResource("6_srmg5")
 autoplay = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 10
+position = Vector2(576, 324)
+texture = ExtResource("7_umvgx")
+
+[node name="Label" type="Label" parent="."]
+z_index = 200
+offset_left = 123.0
+offset_top = 481.0
+offset_right = 1035.0
+offset_bottom = 571.0
+label_settings = SubResource("LabelSettings_xwqhv")
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("8_mxkvs")

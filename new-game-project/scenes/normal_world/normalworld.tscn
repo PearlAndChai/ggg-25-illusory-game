@@ -1,6 +1,5 @@
-[gd_scene load_steps=15 format=3 uid="uid://b6bftkj0giqe5"]
+[gd_scene load_steps=14 format=3 uid="uid://b6bftkj0giqe5"]
 
-[ext_resource type="Script" uid="uid://boh7xar1qi043" path="res://scenes/player/player.gd" id="1_b11ow"]
 [ext_resource type="PackedScene" uid="uid://dbvrk4ll7xkod" path="res://scenes/normal_background/normalbackground.tscn" id="2_13nle"]
 [ext_resource type="PackedScene" uid="uid://gcrusfg42lag" path="res://scenes/normal_foreground/normalforeground.tscn" id="3_jikog"]
 [ext_resource type="PackedScene" uid="uid://bc1uueuw0rmnk" path="res://scenes/player/Player.tscn" id="4_tic4c"]
@@ -18,7 +17,6 @@
 font_size = 20
 
 [node name="Normalworld" type="Node2D"]
-script = ExtResource("1_b11ow")
 
 [node name="Normalbackground" parent="." instance=ExtResource("2_13nle")]
 
