@@ -5,7 +5,6 @@ const dialogue = [
 "Lucy: Is that the cat from earlier? What’s it doing here?",
 "Lucy: Wait, come back!",
 "Lucy: Wait, come back!",
-"Lucy: Wait, come back!",
 "Lucy: What… is this place? Was this the cat’s doing?",
 "Lucy: How did I get here? Can the cat take me back?"
 ]
