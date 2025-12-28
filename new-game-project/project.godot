@@ -11,16 +11,17 @@ config_version=5
 [application]
 
 config/name="ggg"
-<<<<<<< Updated upstream
 run/main_scene="uid://bws35pkbg4y07"
-=======
-run/main_scene="uid://b6bftkj0giqe5"
->>>>>>> Stashed changes
 config/features=PackedStringArray("4.5", "GL Compatibility")
+<<<<<<<Updatedupstreamrun/main_scene="uid://bws35pkbg4y07"
 
 [autoload]
 
 global_variables="*res://scenes/global_variables.gd"
+
+[display]
+
+window/stretch/mode="canvas_items"
 
 [input]
 

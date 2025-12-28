@@ -1,15 +1,15 @@
 [gd_scene load_steps=13 format=3 uid="uid://bc1uueuw0rmnk"]
 
-[ext_resource type="Script" uid="uid://boh7xar1qi043" path="res://Scenes/Player/player.gd" id="1_yoq75"]
-[ext_resource type="Texture2D" uid="uid://comcppmln2kwm" path="res://Assets/player/walk/walkcycle-alt-idle.png" id="2_7oing"]
-[ext_resource type="Texture2D" uid="uid://dtultrd6iskle" path="res://Assets/player/walk/walkcycle-alt-0.png" id="3_5stf6"]
-[ext_resource type="Texture2D" uid="uid://x3rv6jq3aj3n" path="res://Assets/player/walk/walkcycle-alt-1.png" id="4_180ig"]
-[ext_resource type="Texture2D" uid="uid://bob6k7dcxijo8" path="res://Assets/player/walk/walkcycle-alt-2.png" id="5_20koh"]
-[ext_resource type="Texture2D" uid="uid://ns77nld32t4" path="res://Assets/player/walk/walkcycle-alt-3.png" id="6_ov1oi"]
-[ext_resource type="Texture2D" uid="uid://cpwhpysf5icbk" path="res://Assets/player/walk/walkcycle-alt-4.png" id="7_rn7t0"]
-[ext_resource type="Texture2D" uid="uid://cylmso64ujnhv" path="res://Assets/player/walk/walkcycle-alt-5.png" id="8_8qjgm"]
-[ext_resource type="Texture2D" uid="uid://fvqtvmj71su" path="res://Assets/player/walk/walkcycle-alt-6.png" id="9_ejd4k"]
-[ext_resource type="Texture2D" uid="uid://l0crcp7yy8un" path="res://Assets/player/walk/walkcycle-alt-7.png" id="10_2xrq6"]
+[ext_resource type="Script" uid="uid://boh7xar1qi043" path="res://scenes/player/player.gd" id="1_yoq75"]
+[ext_resource type="Texture2D" uid="uid://bqoaa55qeijip" path="res://assets/player/walk/walkcycle-alt-idle.png" id="2_7oing"]
+[ext_resource type="Texture2D" uid="uid://4wfyk4cvkri4" path="res://assets/player/walk/walkcycle-alt-0.png" id="3_5stf6"]
+[ext_resource type="Texture2D" uid="uid://hqleco06ikqp" path="res://assets/player/walk/walkcycle-alt-1.png" id="4_180ig"]
+[ext_resource type="Texture2D" uid="uid://bl2wqykde22d6" path="res://assets/player/walk/walkcycle-alt-2.png" id="5_20koh"]
+[ext_resource type="Texture2D" uid="uid://bxibis3ea0u07" path="res://assets/player/walk/walkcycle-alt-3.png" id="6_ov1oi"]
+[ext_resource type="Texture2D" uid="uid://d25f4846r8jm6" path="res://assets/player/walk/walkcycle-alt-4.png" id="7_rn7t0"]
+[ext_resource type="Texture2D" uid="uid://bq7rhhniwfhq8" path="res://assets/player/walk/walkcycle-alt-5.png" id="8_8qjgm"]
+[ext_resource type="Texture2D" uid="uid://d4n1146gqneq" path="res://assets/player/walk/walkcycle-alt-6.png" id="9_ejd4k"]
+[ext_resource type="Texture2D" uid="uid://dfyqqrk7vkl4j" path="res://assets/player/walk/walkcycle-alt-7.png" id="10_2xrq6"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_0objx"]
 animations = [{
@@ -19,7 +19,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
-"speed": 5.0
+"speed": 0.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -48,22 +48,22 @@ animations = [{
 }],
 "loop": true,
 "name": &"walk",
-"speed": 5.0
+"speed": 8.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yoq75"]
-radius = 94.0
-height = 480.0
+radius = 66.0
+height = 328.0
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_yoq75")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-358, 43.000004)
-scale = Vector2(-0.13676924, 0.13676924)
+position = Vector2(-402.99997, 80)
+scale = Vector2(-0.5207621, 0.5207621)
 sprite_frames = SubResource("SpriteFrames_0objx")
-animation = &"walk"
+animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-404, -6)
+position = Vector2(-410, 67)
 shape = SubResource("CapsuleShape2D_yoq75")

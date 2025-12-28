@@ -10,11 +10,11 @@ offset_left = 22.0
 offset_top = 22.0
 offset_right = 72.0
 offset_bottom = 72.0
-color = Color(0, 1, 0, 1)
+color = Color(0.6, 1, 0.6, 1)
 
 [node name="HealthRed" type="ColorRect" parent="."]
 offset_left = 72.0
 offset_top = 22.0
 offset_right = 122.0
 offset_bottom = 72.0
-color = Color(1, 0, 0, 1)
+color = Color(1, 0.6, 0.6, 1)

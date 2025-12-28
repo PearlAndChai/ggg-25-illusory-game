@@ -1,0 +1,58 @@
+[gd_scene load_steps=10 format=3 uid="uid://b0st7eu5w810x"]
+
+[ext_resource type="Texture2D" uid="uid://br800amdc5xft" path="res://assets/school_cg/people/lucysprites-smile.png" id="1_8w4ee"]
+[ext_resource type="Texture2D" uid="uid://tkhj24j5lbkn" path="res://assets/school_cg/IMG_8659.PNG" id="2_81rsw"]
+[ext_resource type="Texture2D" uid="uid://cbh33v46mhypa" path="res://assets/house_cgs/IMG_8821.PNG" id="3_3pofh"]
+[ext_resource type="Texture2D" uid="uid://blh6qowiumklu" path="res://assets/school_cg/endingdoorcg1.png" id="3_entf6"]
+[ext_resource type="Texture2D" uid="uid://ef2lfopkqfkt" path="res://assets/school_cg/endingdoorcg2.png" id="4_3pofh"]
+[ext_resource type="Texture2D" uid="uid://caa8jmeorcvw" path="res://assets/school_cg/people/guysprites-talking.png" id="5_42us0"]
+[ext_resource type="Texture2D" uid="uid://n7u3akb6oy1i" path="res://assets/ui/dialoguebox.png" id="6_81rsw"]
+[ext_resource type="Script" uid="uid://dekra5dnumk4e" path="res://scenes/school_cg/label.gd" id="8_42us0"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_81rsw"]
+font_size = 17
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(576, 324)
+
+[node name="lucy" type="Sprite2D" parent="."]
+z_index = 10
+texture = ExtResource("1_8w4ee")
+
+[node name="classroom" type="Sprite2D" parent="."]
+z_index = 1
+texture = ExtResource("2_81rsw")
+
+[node name="cat" type="Sprite2D" parent="."]
+visible = false
+z_index = 2
+texture = ExtResource("3_3pofh")
+
+[node name="door" type="Sprite2D" parent="."]
+visible = false
+z_index = 3
+texture = ExtResource("3_entf6")
+
+[node name="look_door" type="Sprite2D" parent="."]
+visible = false
+z_index = 4
+texture = ExtResource("4_3pofh")
+
+[node name="guy" type="Sprite2D" parent="."]
+z_index = 10
+texture = ExtResource("5_42us0")
+
+[node name="dialogue" type="Sprite2D" parent="."]
+z_index = 11
+texture = ExtResource("6_81rsw")
+
+[node name="Label" type="Label" parent="."]
+z_index = 12
+offset_left = -470.0
+offset_top = 150.0
+offset_right = 455.0
+offset_bottom = 240.0
+label_settings = SubResource("LabelSettings_81rsw")
+horizontal_alignment = 1
+script = ExtResource("8_42us0")
+metadata/_edit_use_anchors_ = true

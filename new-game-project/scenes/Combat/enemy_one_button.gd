@@ -1,31 +1,42 @@
 extends TextureButton
 
 const ENEMY_1_IDLE = [
-	preload("uid://b4cjqcq0u8qqt"),
-	preload("uid://crw6cavu2txt"),
-	preload("uid://bvyk88h1vwc2m"),
-	preload("uid://b0g7aaa6iam7j"),
-	preload("uid://ccavg7chej5sf"),
-	preload("uid://cc1skmpclgan6"),
-	preload("uid://bcbffj5j77elr")
+	preload("uid://dfk8vbx3tn0xd"),
+	preload("uid://dax580odx8jjf"),
+	preload("uid://bn8wg2vmr3s4c"),
+	preload("uid://b5fpnlsal4uyl"),
+	preload("uid://qida25ivm5d8"),
+	preload("uid://c0fgnt4kheyex"),
+	preload("uid://ddpxqffr6no6y")
 ]
 
-const ENEMY_1_ATTACK = [
-	preload("uid://coqti7e2p06k0"),
-	preload("uid://gpls7su8t5qe"),
-	preload("uid://cvcvxxqpqdpfh"),
-	preload("uid://cfyx2on1c6ehd"),
-	preload("uid://bxyrdhc3eo4ec"),
-	preload("uid://bb5xmuo4fbafc"),
-	preload("uid://wc58x4v2l47n")
+const ENEMY_1_IDLE_HIGHLIGHT = [
+	preload("uid://bme6gytr6lb16"),
+	preload("uid://dq2ak4468flb8"),
+	preload("uid://dwtxvewcqo3k5"),
+	preload("uid://bgdpb8bdn1wgm"),
+	preload("uid://dhxrl3imxi3ai"),
+	preload("uid://ba6vvrgl2ekav"),
+	preload("uid://dcvkcd0ix5kpu")
+	
 ]
 
 const ENEMY_2_IDLE = [
-	preload("uid://cvt36s8qsv036"),
-	preload("uid://b3l6ubftmbduk"),
-	preload("uid://dxkxi58ls62ri"),
-	preload("uid://csaeomm0bv2m4"),
-	preload("uid://deomkpjtbqjfe")
+	preload("uid://vgei5k0f2qx4"),
+	preload("uid://c4lw3sf0w6i2n"),
+	preload("uid://8kyt0wjg6qb5"),
+	preload("uid://dkdtuiq561vef"),
+	preload("uid://5tse8ggckfrw")
+	
+]
+
+const ENEMY_2_IDLE_HIGHLIGHT = [
+	preload("uid://b8i2vlhirnkrd"),
+	preload("uid://bctk60dc8heww"),
+	preload("uid://bbgqu4fsis1xy"),
+	preload("uid://bin57ngjm2g2v"),
+	preload("uid://ceorbxpiun0b4")
+	
 ]
 
 var frame = 0
@@ -43,6 +54,7 @@ func _process(delta):
 			if frame > 6:
 				frame = 0
 			texture_normal = ENEMY_1_IDLE[frame]
+			texture_hover = ENEMY_1_IDLE_HIGHLIGHT[frame]
 			set_bitmap()
 		else:
 			time += delta
@@ -53,6 +65,7 @@ func _process(delta):
 			if frame > 4:
 				frame = 0
 			texture_normal = ENEMY_2_IDLE[frame]
+			texture_hover = ENEMY_2_IDLE_HIGHLIGHT[frame]
 			set_bitmap()
 		else:
 			time += delta / 2

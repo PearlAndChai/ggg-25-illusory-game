@@ -1,11 +1,11 @@
 [gd_scene load_steps=7 format=3 uid="uid://bws35pkbg4y07"]
 
-[ext_resource type="Texture2D" uid="uid://b3tyrmkijk6q3" path="res://Assets/titlescreen/titlescreen-bg.png" id="1_y83an"]
-[ext_resource type="Texture2D" uid="uid://c1lnbxbewjw61" path="res://Assets/titlescreen/titlescreen-button.png" id="2_dlu5n"]
-[ext_resource type="Texture2D" uid="uid://bntta0w7100ya" path="res://Assets/titlescreen/titlescreen-button-highlight.png" id="3_4q3s2"]
-[ext_resource type="Script" uid="uid://co2mcqdk2a171" path="res://Scenes/Titlescreen/texture_button.gd" id="4_xcbsp"]
-[ext_resource type="Texture2D" uid="uid://vswtip681chq" path="res://Assets/titlescreen/titlescreen-lucy.png" id="5_ck4mm"]
-[ext_resource type="Texture2D" uid="uid://ci6xcxsdaab54" path="res://Assets/titlescreen/titlescreen-title.png" id="6_rn6u0"]
+[ext_resource type="Texture2D" uid="uid://b3tyrmkijk6q3" path="res://assets/titlescreen/titlescreen-bg.png" id="1_y83an"]
+[ext_resource type="Texture2D" uid="uid://c1lnbxbewjw61" path="res://assets/titlescreen/titlescreen-button.png" id="2_dlu5n"]
+[ext_resource type="Texture2D" uid="uid://bntta0w7100ya" path="res://assets/titlescreen/titlescreen-button-highlight.png" id="3_4q3s2"]
+[ext_resource type="Script" uid="uid://co2mcqdk2a171" path="res://scenes/titlescreen/texture_button.gd" id="4_xcbsp"]
+[ext_resource type="Texture2D" uid="uid://vswtip681chq" path="res://assets/titlescreen/titlescreen-lucy.png" id="5_ck4mm"]
+[ext_resource type="Texture2D" uid="uid://ci6xcxsdaab54" path="res://assets/titlescreen/titlescreen-title.png" id="6_rn6u0"]
 
 [node name="Titlescreen" type="Node2D"]
 

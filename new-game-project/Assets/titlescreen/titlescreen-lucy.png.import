@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://vswtip681chq"
-path="res://.godot/imported/titlescreen-lucy.png-5bdc297c73e0f39b419bf7abc8628a25.ctex"
+path="res://.godot/imported/titlescreen-lucy.png-80a2bbcce7967c19a2ed587f91f7ad23.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/titlescreen/titlescreen-lucy.png"
-dest_files=["res://.godot/imported/titlescreen-lucy.png-5bdc297c73e0f39b419bf7abc8628a25.ctex"]
+source_file="res://assets/titlescreen/titlescreen-lucy.png"
+dest_files=["res://.godot/imported/titlescreen-lucy.png-80a2bbcce7967c19a2ed587f91f7ad23.ctex"]
 
 [params]
 

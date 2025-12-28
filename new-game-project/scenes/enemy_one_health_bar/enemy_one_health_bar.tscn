@@ -10,7 +10,7 @@ offset_left = 574.0
 offset_top = 82.0
 offset_right = 624.0
 offset_bottom = 132.0
-color = Color(0, 1, 0, 1)
+color = Color(0.6, 1, 0.6, 1)
 metadata/_edit_use_anchors_ = true
 
 [node name="HealthRed" type="ColorRect" parent="."]
@@ -18,5 +18,5 @@ offset_left = 624.0
 offset_top = 82.0
 offset_right = 674.0
 offset_bottom = 132.0
-color = Color(1, 0, 0, 1)
+color = Color(1, 0.6, 0.6, 1)
 metadata/_edit_use_anchors_ = true

@@ -9,6 +9,15 @@ const ENEMY_1_IDLE = [
 	
 ]
 
+const ENEMY_1_IDLE_HIGHLIGHT = [
+	preload("uid://bod1d4p1htkir"),
+	preload("uid://c6v7c3rqmxgx8"),
+	preload("uid://c77yjp57ju5ty"),
+	preload("uid://bqf5givfsbbcp"),
+	preload("uid://de6snkqjtlupc")
+
+]
+
 var frame = 0
 const FRAME_LENGTH = 0.125
 var time = 0
@@ -21,6 +30,7 @@ func _process(_delta):
 			if frame > 4:
 				frame = 0
 			texture_normal = ENEMY_1_IDLE[frame]
+			texture_hover = ENEMY_1_IDLE_HIGHLIGHT[frame]
 			set_bitmap()
 		else:
 			time += 0.005

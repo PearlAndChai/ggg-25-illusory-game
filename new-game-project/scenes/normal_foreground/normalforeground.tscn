@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://gcrusfg42lag"]
+
+[ext_resource type="Texture2D" uid="uid://chfc8remcsrbe" path="res://assets/suburban_bg/Illustration67(8).png" id="1_twlts"]
+
+[node name="Normalforeground" type="Node2D"]
+
+[node name="foreground" type="Parallax2D" parent="."]
+scroll_scale = Vector2(2, 2)
+repeat_size = Vector2(1152, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="foreground"]
+position = Vector2(576, 324)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_twlts")

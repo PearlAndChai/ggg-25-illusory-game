@@ -15,7 +15,7 @@ func _process(_delta):
 	if global_variables.player_position - FRAMEWIDTH + 500 >= global_variables.current_enemy_array[0] and global_variables.current_enemy_number <= global_variables.enemies.size():
 		global_variables.enemy_spawned = false
 		print("reached enemy")
-		get_tree().change_scene_to_file("res://scenes/combat/Combat.tscn")
+		get_tree().change_scene_to_file("res://scenes/combat/combat.tscn")
 		
 	if global_variables.current_enemy_number == 2:
 		$AnimatedSprite2DOne.play("bully")

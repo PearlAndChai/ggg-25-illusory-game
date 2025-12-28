@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bcvfkf2044pjq"
-path="res://.godot/imported/titlescreen-button.png-19871da95a2062d0996af6391f2bb773.ctex"
+path="res://.godot/imported/titlescreen-button.png-757c810149bae86a83b0aae2099f5c62.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/player/titlescreen/titlescreen-button.png"
-dest_files=["res://.godot/imported/titlescreen-button.png-19871da95a2062d0996af6391f2bb773.ctex"]
+source_file="res://assets/player/titlescreen/titlescreen-button.png"
+dest_files=["res://.godot/imported/titlescreen-button.png-757c810149bae86a83b0aae2099f5c62.ctex"]
 
 [params]
 

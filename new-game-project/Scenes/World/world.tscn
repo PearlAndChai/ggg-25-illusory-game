@@ -1,9 +1,9 @@
 [gd_scene load_steps=8 format=3 uid="uid://d4juxxwd4d8vk"]
 
-[ext_resource type="PackedScene" uid="uid://ci0t60m7fnfim" path="res://scenes/IllusoryBackground/illusorybackground.tscn" id="1_7staa"]
+[ext_resource type="PackedScene" uid="uid://ci0t60m7fnfim" path="res://scenes/illusory_background/illusorybackground.tscn" id="1_7staa"]
 [ext_resource type="PackedScene" uid="uid://bc1uueuw0rmnk" path="res://scenes/player/Player.tscn" id="2_o0828"]
 [ext_resource type="Script" uid="uid://c0ihxd1oekah6" path="res://scenes/player/camera_2d.gd" id="3_12diy"]
-[ext_resource type="PackedScene" uid="uid://cq1k6pw74sf37" path="res://scenes/IllusoryForeground/illusoryforeground.tscn" id="4_5jrsn"]
+[ext_resource type="PackedScene" uid="uid://cq1k6pw74sf37" path="res://scenes/illusory_foreground/illusoryforeground.tscn" id="4_5jrsn"]
 [ext_resource type="PackedScene" uid="uid://dfujy3b6u6i3r" path="res://scenes/enemy/enemy.tscn" id="5_pbr1s"]
 [ext_resource type="Texture2D" uid="uid://fchdqggp6fgf" path="res://assets/buildings/house_dream.png" id="6_bq33v"]
 [ext_resource type="Texture2D" uid="uid://4knk1vm4mkf2" path="res://assets/buildings/IMG_8650.PNG" id="7_bq33v"]

@@ -31,6 +31,7 @@ func _physics_process(_delta: float) -> void:
 	else:
 		x_direction = 0
 		$AnimatedSprite2D.play("idle")
+	
 	velocity.x = x_direction * SPEED
 	
 	move_and_slide()
@@ -44,6 +45,11 @@ func _process(_delta):
 	if position.x <= -4000:
 		get_tree().change_scene_to_file("res://scenes/house_cg/house_cg.tscn")
 		
+	if position.x < -81 + 400 and global_variables.bullies_dialogue_ran == false:
+		global_variables.reached_bullies = true
+	
+	if position.x < -3208 + 400 and global_variables.grandma_dialogue_ran == false:
+		global_variables.reached_grandma = true
 
 	
 	

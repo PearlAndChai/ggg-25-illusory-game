@@ -2,6 +2,9 @@ extends Node2D
 
 @onready var enemy_two = $EnemyTwo
 @onready var enemy_two_health_bar = $EnemyTwoHealthBar
+@onready var enemy_two_health_bar_outline = $EnemyTwoHealthBarOutline
+
+@onready var player = $Player
 
 signal enemy_attacked()
 
@@ -32,9 +35,11 @@ func _ready():
 	if global_variables.current_enemy_array[1] == 1:
 		enemy_two.visible = false
 		enemy_two_health_bar.visible = false
+		enemy_two_health_bar_outline.visible = false
 	else:
 		enemy_two.visible = true
 		enemy_two_health_bar.visible = true
+		enemy_two_health_bar_outline.visible = true
 
 func _process(_delta):
 	#print that you're out of moves
@@ -45,6 +50,7 @@ func _process(_delta):
 	#if the enemies are dead, bring you back to the world (walking)
 	if global_variables.current_enemy_array[1] == 1:
 		if global_variables.enemy_one_health <= 0:
+			await get_tree().create_timer(3.0).timeout
 			get_tree().change_scene_to_file("res://scenes/world/world.tscn")
 	else:
 		if global_variables.enemy_one_health <= 0 and global_variables.enemy_two_health <= 0:
@@ -53,10 +59,14 @@ func _process(_delta):
 func _on_pencil_button_down():
 	ability_array = attacks["Pencil"]
 	ability_selected = "Pencil"
+	player.play("pencil")
+	player.stop()
 	
 func _on_book_button_down():
 	ability_array = attacks["Book"]
 	ability_selected = "Book"
+	player.play("book")
+	player.stop()
 
 func _on_enemy_one_button_down():
 	moves_left -= 1
@@ -85,7 +95,13 @@ func _deal_damage():
 		
 	else:
 		print("you have not selected an enemy yet")
-
+		
+	if ability_selected == "Pencil":
+		player.play("pencil")
+	else:
+		player.play("book")
+		
+		
 func _enemy_attack():
 		global_variables.player_health -= 0.25
 		emit_signal("enemy_attacked")

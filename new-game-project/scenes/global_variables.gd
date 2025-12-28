@@ -9,6 +9,15 @@ var world = "Normal"
 
 var interacted_with_cat = false
 
+var reached_bullies = false
+var reached_cat = false
+var reached_grandma = false
+
+var bullies_dialogue_ran = false
+var cat_dialogue_ran = false
+var grandma_dialogue_ran = false
+
+
 var enemy_spawned = false
 
 var enemies = {
@@ -31,4 +40,5 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	pass
+	if player_health <= 0:
+		get_tree().quit()

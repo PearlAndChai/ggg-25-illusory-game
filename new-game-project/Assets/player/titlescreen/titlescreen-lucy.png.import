@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dtu62tjvpb3gt"
-path="res://.godot/imported/titlescreen-lucy.png-111ed6cf7f0f8978e76b137fc980f0a9.ctex"
+path="res://.godot/imported/titlescreen-lucy.png-d1207e16a145f6c6c3142ec83e1d4cfe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/player/titlescreen/titlescreen-lucy.png"
-dest_files=["res://.godot/imported/titlescreen-lucy.png-111ed6cf7f0f8978e76b137fc980f0a9.ctex"]
+source_file="res://assets/player/titlescreen/titlescreen-lucy.png"
+dest_files=["res://.godot/imported/titlescreen-lucy.png-d1207e16a145f6c6c3142ec83e1d4cfe.ctex"]
 
 [params]
 
