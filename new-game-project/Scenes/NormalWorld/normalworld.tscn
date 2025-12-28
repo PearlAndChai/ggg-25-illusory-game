@@ -1,9 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://b6bftkj0giqe5"]
+[gd_scene load_steps=8 format=3 uid="uid://b6bftkj0giqe5"]
 
-[ext_resource type="Script" uid="uid://boh7xar1qi043" path="res://Scenes/Player/player.gd" id="1_b11ow"]
-[ext_resource type="PackedScene" uid="uid://dbvrk4ll7xkod" path="res://Scenes/NormalBackground/normalbackground.tscn" id="2_13nle"]
-[ext_resource type="PackedScene" uid="uid://gcrusfg42lag" path="res://Scenes/NormalForeground/normalforeground.tscn" id="3_jikog"]
-[ext_resource type="PackedScene" uid="uid://bc1uueuw0rmnk" path="res://Scenes/Player/Player.tscn" id="4_tic4c"]
+[ext_resource type="Script" uid="uid://boh7xar1qi043" path="res://scenes/player/player.gd" id="1_b11ow"]
+[ext_resource type="PackedScene" uid="uid://dbvrk4ll7xkod" path="res://scenes/NormalBackground/normalbackground.tscn" id="2_13nle"]
+[ext_resource type="PackedScene" uid="uid://gcrusfg42lag" path="res://scenes/NormalForeground/normalforeground.tscn" id="3_jikog"]
+[ext_resource type="PackedScene" uid="uid://bc1uueuw0rmnk" path="res://scenes/player/Player.tscn" id="4_tic4c"]
+[ext_resource type="Texture2D" uid="uid://qyxydpl2e0lr" path="res://assets/buildings/school_normal.png" id="5_5rlyi"]
+[ext_resource type="Texture2D" uid="uid://cmaolfesroklr" path="res://assets/cat/Illustration76.png" id="6_42e5f"]
+[ext_resource type="Texture2D" uid="uid://bgb3r1r4hvsk3" path="res://assets/buildings/house_normal.png" id="7_aam7u"]
 
 [node name="Normalworld" type="Node2D"]
 script = ExtResource("1_b11ow")
@@ -11,9 +14,31 @@ script = ExtResource("1_b11ow")
 [node name="Normalbackground" parent="." instance=ExtResource("2_13nle")]
 
 [node name="Player" parent="." instance=ExtResource("4_tic4c")]
+z_index = 2
 position = Vector2(1276, 224)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 offset = Vector2(-700, 100)
 
 [node name="Normalforeground" parent="." instance=ExtResource("3_jikog")]
+z_index = 4
+
+[node name="SchoolNormal" type="Sprite2D" parent="."]
+position = Vector2(1358, 322)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("5_5rlyi")
+
+[node name="Cat" type="Sprite2D" parent="."]
+z_index = 3
+position = Vector2(-2300, 324)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("6_42e5f")
+
+[node name="HouseNormal" type="Sprite2D" parent="."]
+position = Vector2(-4160, 324)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("7_aam7u")
+
+[node name="Bullies" type="Sprite2D" parent="."]
+
+[node name="Grandma" type="Sprite2D" parent="."]

@@ -5,6 +5,10 @@ var player_health = 1
 var enemy_one_health = 1
 var enemy_two_health = 1
 
+var world = "Normal"
+
+var interacted_with_cat = false
+
 var enemy_spawned = false
 
 var enemies = {

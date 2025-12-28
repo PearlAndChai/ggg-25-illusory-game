@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://kqcliss35jnk"
-path="res://.godot/imported/yellow_planet.png-6cf5328f89dba5b8890a2ed283d2f563.ctex"
+path="res://.godot/imported/yellow_planet.png-5f925d3815d82239d793aaa69ddb175b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/background/yellow_planet.png"
-dest_files=["res://.godot/imported/yellow_planet.png-6cf5328f89dba5b8890a2ed283d2f563.ctex"]
+source_file="res://assets/background/yellow_planet.png"
+dest_files=["res://.godot/imported/yellow_planet.png-5f925d3815d82239d793aaa69ddb175b.ctex"]
 
 [params]
 

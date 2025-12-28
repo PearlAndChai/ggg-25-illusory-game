@@ -1,0 +1,36 @@
+[gd_scene load_steps=7 format=3 uid="uid://bdniul623ryou"]
+
+[ext_resource type="Texture2D" uid="uid://8fnl42m517xk" path="res://assets/house_cgs/IMG_8799.PNG" id="4_lrlyf"]
+[ext_resource type="Texture2D" uid="uid://bixeqsnl54q7s" path="res://assets/house_cgs/IMG_8798.PNG" id="5_u78i7"]
+[ext_resource type="Texture2D" uid="uid://cbh33v46mhypa" path="res://assets/house_cgs/IMG_8821.PNG" id="6_u2gh3"]
+[ext_resource type="Texture2D" uid="uid://ctn320s0un0fo" path="res://assets/house_cgs/IMG_8810.PNG" id="7_nv5py"]
+[ext_resource type="Script" uid="uid://by7sp04l8qood" path="res://scenes/house_cg/animated_sprite_2d.gd" id="8_xwqhv"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_266vn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_lrlyf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_u78i7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_u2gh3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_nv5py")
+}],
+"loop": false,
+"name": &"default",
+"speed": 1.0
+}]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="HouseSprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_266vn")
+autoplay = "default"
+script = ExtResource("8_xwqhv")

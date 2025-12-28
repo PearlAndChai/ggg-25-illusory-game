@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://r7dwwa50pfmn"]
+
+[ext_resource type="Texture2D" uid="uid://cw4mfwnlhymyt" path="res://assets/house_cgs/Illustration77.png" id="1_3mhtb"]
+[ext_resource type="Texture2D" uid="uid://je52x37nsek" path="res://assets/house_cgs/Illustration79.png" id="2_6bwxn"]
+[ext_resource type="Texture2D" uid="uid://dx0wy2nx1vpiu" path="res://assets/house_cgs/Illustration76.png" id="3_h6vba"]
+[ext_resource type="Script" uid="uid://d15dxr2cbuxlm" path="res://scenes/cat_cg/animated_sprite_2d.gd" id="4_6bwxn"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cmryr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_3mhtb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_6bwxn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_h6vba")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 1.0
+}]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CatSprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_cmryr")
+animation = &"new_animation"
+autoplay = "new_animation"
+script = ExtResource("4_6bwxn")

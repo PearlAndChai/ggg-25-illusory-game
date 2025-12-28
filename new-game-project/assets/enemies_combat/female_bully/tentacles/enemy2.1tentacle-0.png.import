@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://br7yu8y3g3d4p"
-path="res://.godot/imported/enemy2.1tentacle-0.png-9c7f97a57418bef5f3f13f10bd700974.ctex"
+path="res://.godot/imported/enemy2.1tentacle-0.png-d8da8d892693cb494e27f87ae24ea185.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/enemies_combat/female_bully/tentacles/enemy2.1tentacle-0.png"
-dest_files=["res://.godot/imported/enemy2.1tentacle-0.png-9c7f97a57418bef5f3f13f10bd700974.ctex"]
+source_file="res://assets/enemies_combat/female_bully/tentacles/enemy2.1tentacle-0.png"
+dest_files=["res://.godot/imported/enemy2.1tentacle-0.png-d8da8d892693cb494e27f87ae24ea185.ctex"]
 
 [params]
 

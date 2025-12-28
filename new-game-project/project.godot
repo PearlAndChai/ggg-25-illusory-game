@@ -11,7 +11,11 @@ config_version=5
 [application]
 
 config/name="ggg"
+<<<<<<< Updated upstream
 run/main_scene="uid://bws35pkbg4y07"
+=======
+run/main_scene="uid://b6bftkj0giqe5"
+>>>>>>> Stashed changes
 config/features=PackedStringArray("4.5", "GL Compatibility")
 
 [autoload]

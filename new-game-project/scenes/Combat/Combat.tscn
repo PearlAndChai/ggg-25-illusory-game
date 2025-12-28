@@ -1,72 +1,86 @@
-[gd_scene load_steps=40 format=3 uid="uid://dts766lw3brxy"]
+[gd_scene load_steps=55 format=3 uid="uid://dts766lw3brxy"]
 
-[ext_resource type="Script" uid="uid://yg3shfomalil" path="res://Scenes/Combat/combat.gd" id="1_344jg"]
-[ext_resource type="Texture2D" uid="uid://cddo27nq4nl3k" path="res://Assets/enemies_world/image.png" id="2_6e47v"]
-[ext_resource type="Texture2D" uid="uid://b4cjqcq0u8qqt" path="res://Assets/enemies_combat/grandmother/idle/enemy1idle-0.png" id="2_cqe8q"]
-[ext_resource type="PackedScene" uid="uid://ncot40fs31me" path="res://Scenes/enemy_one_health_bar/enemy_one_health_bar.tscn" id="3_wm0o0"]
-[ext_resource type="Script" uid="uid://bdqup5ygtvrxw" path="res://Scenes/Combat/enemy_one_button.gd" id="3_x5flq"]
-[ext_resource type="PackedScene" uid="uid://c4mrws3pokygl" path="res://Scenes/enemy_two_health_bar/enemy_two_health_bar.tscn" id="4_6h11d"]
-[ext_resource type="Texture2D" uid="uid://ratynadr5m3w" path="res://Assets/enemies_combat/male_bully/idle/enemy2.2-idle-0.png" id="4_bc6rn"]
-[ext_resource type="Texture2D" uid="uid://coqti7e2p06k0" path="res://Assets/enemies_combat/grandmother/attack/enemy1animations-mic-attack-00.png" id="4_ffkp0"]
-[ext_resource type="Texture2D" uid="uid://b5v7i0xqid65e" path="res://Assets/enemies_combat/female_bully/attack/enemy2.1animations-tentacle-attack-00.png" id="4_ws8ys"]
-[ext_resource type="Script" uid="uid://7glyxf8aey11" path="res://Scenes/Combat/enemy_two_button.gd" id="4_x5flq"]
-[ext_resource type="Texture2D" uid="uid://dgtuue2s7cjrv" path="res://Assets/enemies_combat/female_bully/attack/enemy2.1animations-tentacle-attack-01.png" id="5_04hce"]
-[ext_resource type="Texture2D" uid="uid://gpls7su8t5qe" path="res://Assets/enemies_combat/grandmother/attack/enemy1animations-mic-attack-01.png" id="5_ps2h3"]
-[ext_resource type="PackedScene" uid="uid://vve0ytatamai" path="res://Scenes/player_health_bar/player_health_bar.tscn" id="5_x45ga"]
-[ext_resource type="Texture2D" uid="uid://cvcvxxqpqdpfh" path="res://Assets/enemies_combat/grandmother/attack/enemy1animations-mic-attack-02.png" id="6_abk4o"]
-[ext_resource type="Texture2D" uid="uid://dgg72nubvxsdq" path="res://Assets/enemies_combat/female_bully/attack/enemy2.1animations-tentacle-attack-02.png" id="6_eeyue"]
-[ext_resource type="Texture2D" uid="uid://bgjruarhj0jdx" path="res://Assets/enemies_combat/female_bully/attack/enemy2.1animations-tentacle-attack-03.png" id="7_bosqy"]
-[ext_resource type="Texture2D" uid="uid://cfyx2on1c6ehd" path="res://Assets/enemies_combat/grandmother/attack/enemy1animations-mic-attack-03.png" id="7_o2vnb"]
-[ext_resource type="Texture2D" uid="uid://dcoagq6qpbm3c" path="res://Assets/enemies_combat/female_bully/attack/enemy2.1animations-tentacle-attack-04.png" id="8_2u6g8"]
-[ext_resource type="Texture2D" uid="uid://bxyrdhc3eo4ec" path="res://Assets/enemies_combat/grandmother/attack/enemy1animations-mic-attack-04.png" id="8_xp4ri"]
-[ext_resource type="Texture2D" uid="uid://bb5xmuo4fbafc" path="res://Assets/enemies_combat/grandmother/attack/enemy1animations-mic-attack-05.png" id="9_iuuvw"]
-[ext_resource type="Texture2D" uid="uid://c0xar4u77pbk2" path="res://Assets/enemies_combat/female_bully/attack/enemy2.1animations-tentacle-attack-05.png" id="9_j48ph"]
-[ext_resource type="Texture2D" uid="uid://wc58x4v2l47n" path="res://Assets/enemies_combat/grandmother/attack/enemy1animations-mic-attack-06.png" id="10_co5u5"]
-[ext_resource type="Texture2D" uid="uid://dihbfs0i6smta" path="res://Assets/enemies_combat/female_bully/attack/enemy2.1animations-tentacle-attack-06.png" id="10_ujssv"]
-[ext_resource type="Texture2D" uid="uid://bicx31thu0rph" path="res://Assets/enemies_combat/female_bully/attack/enemy2.1animations-tentacle-attack-07.png" id="11_hr7v5"]
-[ext_resource type="Script" uid="uid://co44pyer2gycf" path="res://Scenes/Combat/enemy_one_attack.gd" id="11_m5o0j"]
-[ext_resource type="Texture2D" uid="uid://7qajnwk8xhy7" path="res://Assets/enemies_combat/female_bully/attack/enemy2.1animations-tentacle-attack-08.png" id="12_dvc0f"]
-[ext_resource type="Texture2D" uid="uid://br7yu8y3g3d4p" path="res://Assets/enemies_combat/female_bully/tentacles/enemy2.1tentacle-0.png" id="21_5q4p7"]
-[ext_resource type="Texture2D" uid="uid://ccwtn72ukq3iu" path="res://Assets/enemies_combat/female_bully/tentacles/enemy2.1tentacle-1.png" id="22_hm6ng"]
-[ext_resource type="Texture2D" uid="uid://5owv57nmjlih" path="res://Assets/enemies_combat/female_bully/tentacles/enemy2.1tentacle-2.png" id="23_lqgwh"]
-[ext_resource type="Texture2D" uid="uid://86ayfgibipcq" path="res://Assets/enemies_combat/female_bully/tentacles/enemy2.1tentacle-3.png" id="24_ykcvi"]
-[ext_resource type="Texture2D" uid="uid://dkquyxutpho8o" path="res://Assets/enemies_combat/female_bully/tentacles/enemy2.1tentacle-4.png" id="25_tsxew"]
-[ext_resource type="Texture2D" uid="uid://d1lsstdhusamj" path="res://Assets/enemies_combat/female_bully/tentacles/enemy2.1tentacle-5.png" id="26_mqm2y"]
-[ext_resource type="Texture2D" uid="uid://bp1hykji0da5k" path="res://Assets/enemies_combat/female_bully/tentacles/enemy2.1tentacle-6.png" id="27_lmju7"]
-[ext_resource type="Texture2D" uid="uid://uvwcbbpktfdw" path="res://Assets/enemies_combat/female_bully/tentacles/enemy2.1tentacle-7.png" id="28_4c13c"]
-[ext_resource type="Texture2D" uid="uid://cx1jtrwlbw75p" path="res://Assets/enemies_combat/female_bully/tentacles/enemy2.1tentacle-8.png" id="29_4nv5l"]
-[ext_resource type="PackedScene" uid="uid://ci0t60m7fnfim" path="res://Scenes/IllusoryBackground/illusorybackground.tscn" id="36_fec5s"]
-[ext_resource type="Texture2D" uid="uid://comcppmln2kwm" path="res://Assets/player/walk/walkcycle-alt-idle.png" id="37_hm6ng"]
+[ext_resource type="Script" uid="uid://yg3shfomalil" path="res://scenes/combat/combat.gd" id="1_344jg"]
+[ext_resource type="Texture2D" uid="uid://cddo27nq4nl3k" path="res://assets/enemies_world/image.png" id="2_6e47v"]
+[ext_resource type="Texture2D" uid="uid://b4cjqcq0u8qqt" path="res://assets/enemies_combat/grandmother/idle/enemy1idle-0.png" id="2_cqe8q"]
+[ext_resource type="PackedScene" uid="uid://ncot40fs31me" path="res://scenes/enemy_one_health_bar/enemy_one_health_bar.tscn" id="3_wm0o0"]
+[ext_resource type="Script" uid="uid://bdqup5ygtvrxw" path="res://scenes/combat/enemy_one_button.gd" id="3_x5flq"]
+[ext_resource type="PackedScene" uid="uid://c4mrws3pokygl" path="res://scenes/enemy_two_health_bar/enemy_two_health_bar.tscn" id="4_6h11d"]
+[ext_resource type="Texture2D" uid="uid://ratynadr5m3w" path="res://assets/enemies_combat/male_bully/idle/enemy2.2-idle-0.png" id="4_bc6rn"]
+[ext_resource type="Texture2D" uid="uid://coqti7e2p06k0" path="res://assets/enemies_combat/grandmother/attack/enemy1animations-mic-attack-00.png" id="4_ffkp0"]
+[ext_resource type="Script" uid="uid://7glyxf8aey11" path="res://scenes/combat/enemy_two_button.gd" id="4_x5flq"]
+[ext_resource type="Texture2D" uid="uid://gpls7su8t5qe" path="res://assets/enemies_combat/grandmother/attack/enemy1animations-mic-attack-01.png" id="5_ps2h3"]
+[ext_resource type="PackedScene" uid="uid://vve0ytatamai" path="res://scenes/player_health_bar/player_health_bar.tscn" id="5_x45ga"]
+[ext_resource type="Texture2D" uid="uid://cvcvxxqpqdpfh" path="res://assets/enemies_combat/grandmother/attack/enemy1animations-mic-attack-02.png" id="6_abk4o"]
+[ext_resource type="Texture2D" uid="uid://cfyx2on1c6ehd" path="res://assets/enemies_combat/grandmother/attack/enemy1animations-mic-attack-03.png" id="7_o2vnb"]
+[ext_resource type="Texture2D" uid="uid://bxyrdhc3eo4ec" path="res://assets/enemies_combat/grandmother/attack/enemy1animations-mic-attack-04.png" id="8_xp4ri"]
+[ext_resource type="Texture2D" uid="uid://bb5xmuo4fbafc" path="res://assets/enemies_combat/grandmother/attack/enemy1animations-mic-attack-05.png" id="9_iuuvw"]
+[ext_resource type="Texture2D" uid="uid://wc58x4v2l47n" path="res://assets/enemies_combat/grandmother/attack/enemy1animations-mic-attack-06.png" id="10_co5u5"]
+[ext_resource type="Script" uid="uid://co44pyer2gycf" path="res://scenes/combat/enemy_one_attack.gd" id="11_m5o0j"]
+[ext_resource type="Texture2D" uid="uid://ck7fstthc4ju" path="res://assets/player/book/mc-book-attack-00.png" id="24_4c13c"]
+[ext_resource type="Texture2D" uid="uid://y6qsrwqj7rh1" path="res://assets/player/book/mc-book-attack-02.png" id="25_4nv5l"]
+[ext_resource type="Texture2D" uid="uid://dkquyxutpho8o" path="res://assets/enemies_combat/female_bully/tentacles/enemy2.1tentacle-4.png" id="25_tsxew"]
+[ext_resource type="Texture2D" uid="uid://d1lsstdhusamj" path="res://assets/enemies_combat/female_bully/tentacles/enemy2.1tentacle-5.png" id="26_mqm2y"]
+[ext_resource type="Texture2D" uid="uid://brypvbfojmyb0" path="res://assets/player/book/mc-book-attack-04.png" id="26_ytrqp"]
+[ext_resource type="Texture2D" uid="uid://brtcuywp2kg41" path="res://assets/player/book/mc-book-attack-06.png" id="27_lhon3"]
+[ext_resource type="Texture2D" uid="uid://bp1hykji0da5k" path="res://assets/enemies_combat/female_bully/tentacles/enemy2.1tentacle-6.png" id="27_lmju7"]
+[ext_resource type="Texture2D" uid="uid://uvwcbbpktfdw" path="res://assets/enemies_combat/female_bully/tentacles/enemy2.1tentacle-7.png" id="28_4c13c"]
+[ext_resource type="Texture2D" uid="uid://mavcmlhncw5x" path="res://assets/player/book/mc-book-attack-08.png" id="28_wnrjw"]
+[ext_resource type="Texture2D" uid="uid://cx1jtrwlbw75p" path="res://assets/enemies_combat/female_bully/tentacles/enemy2.1tentacle-8.png" id="29_4nv5l"]
+[ext_resource type="Texture2D" uid="uid://dunnu45buqjvs" path="res://assets/player/book/mc-book-attack-11.png" id="29_yij0w"]
+[ext_resource type="Texture2D" uid="uid://dwcuuclee7vo1" path="res://assets/player/book/mc-book-attack-13.png" id="30_11ljy"]
+[ext_resource type="Texture2D" uid="uid://cc47tbn88gk7m" path="res://assets/player/book/mc-book-attack-15.png" id="31_1qkn8"]
+[ext_resource type="Texture2D" uid="uid://dg1dqxq5wufg3" path="res://assets/player/book/mc-book-attack-17.png" id="32_ga8gf"]
+[ext_resource type="Texture2D" uid="uid://6ys1s8qbgbnl" path="res://assets/player/book/mc-book-attack-18.png" id="33_po3lx"]
+[ext_resource type="Texture2D" uid="uid://cwb3r737jpi4l" path="res://assets/player/book/mc-book-attack-19.png" id="34_yd37h"]
+[ext_resource type="Texture2D" uid="uid://brdrf1qlvskwa" path="res://assets/player/book/mc-book-attack-20.png" id="35_slu62"]
+[ext_resource type="PackedScene" uid="uid://ci0t60m7fnfim" path="res://scenes/IllusoryBackground/illusorybackground.tscn" id="36_fec5s"]
+[ext_resource type="Texture2D" uid="uid://d0oqnl1mrti3e" path="res://assets/player/book/mc-book-attack-21.png" id="36_mthyo"]
+[ext_resource type="Texture2D" uid="uid://b1unit6a53jrf" path="res://assets/player/book/mc-book-attack-22.png" id="37_7vt5i"]
+[ext_resource type="Texture2D" uid="uid://dbdu3o0fn2nhk" path="res://assets/player/book/mc-book-attack-23.png" id="38_djad1"]
+[ext_resource type="Texture2D" uid="uid://u6qyli5tycb0" path="res://assets/player/book/mc-book-attack-24.png" id="39_vo2a3"]
+[ext_resource type="Texture2D" uid="uid://by5044svf5y64" path="res://assets/player/book/mc-book-attack-25.png" id="40_jt0vw"]
+[ext_resource type="Texture2D" uid="uid://3bsbkp3xm03n" path="res://assets/player/book/mc-book-attack-26.png" id="41_yy7k1"]
+[ext_resource type="Texture2D" uid="uid://blf6j5kwf74a" path="res://assets/player/book/mc-book-attack-27.png" id="42_uujdx"]
+[ext_resource type="Texture2D" uid="uid://cmhx74e0u76ic" path="res://assets/player/book/mc-book-attack-38.png" id="43_y5v30"]
+[ext_resource type="Texture2D" uid="uid://bvcvwfyyu5jv5" path="res://assets/player/pencil/frame0021.png" id="44_ga8gf"]
+[ext_resource type="Texture2D" uid="uid://c86rulfetcbe6" path="res://assets/player/pencil/frame0000.png" id="45_po3lx"]
+[ext_resource type="Texture2D" uid="uid://deecv7nw4526y" path="res://assets/player/pencil/frame0001.png" id="46_yd37h"]
+[ext_resource type="Texture2D" uid="uid://5vbbb2j3fpod" path="res://assets/player/pencil/frame0003.png" id="47_slu62"]
+[ext_resource type="Texture2D" uid="uid://bo0ya3q2u7eib" path="res://assets/player/pencil/frame0005.png" id="48_mthyo"]
+[ext_resource type="Texture2D" uid="uid://ieiws3x61xsa" path="res://assets/player/pencil/frame0006.png" id="49_7vt5i"]
+[ext_resource type="Texture2D" uid="uid://dsijp6eyct8j" path="res://assets/player/pencil/frame0009.png" id="50_djad1"]
+[ext_resource type="Texture2D" uid="uid://bpuwcwcnpnk03" path="res://assets/player/pencil/frame0011.png" id="51_vo2a3"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_3hhx1"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_ws8ys")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_04hce")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_eeyue")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_bosqy")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_2u6g8")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_j48ph")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_ujssv")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_hr7v5")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("12_dvc0f")
+"texture": null
 }],
 "loop": true,
 "name": &"bully_attack",
@@ -108,16 +122,16 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("21_5q4p7")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("22_hm6ng")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("23_lqgwh")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("24_ykcvi")
+"texture": null
 }, {
 "duration": 1.0,
 "texture": ExtResource("25_tsxew")
@@ -136,6 +150,118 @@ animations = [{
 }],
 "loop": false,
 "name": &"tentacle_attack",
+"speed": 8.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_a7gnj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_4c13c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_4nv5l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_ytrqp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_lhon3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_wnrjw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_yij0w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_11ljy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_1qkn8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_ga8gf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_po3lx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_yd37h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_slu62")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_mthyo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_7vt5i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_djad1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_vo2a3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_jt0vw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_yy7k1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_uujdx")
+}],
+"loop": true,
+"name": &"book",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("43_y5v30")
+}],
+"loop": true,
+"name": &"book_end",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("44_ga8gf")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("45_po3lx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_yd37h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_slu62")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_mthyo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_7vt5i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_djad1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_vo2a3")
+}],
+"loop": true,
+"name": &"pencil",
 "speed": 8.0
 }]
 
@@ -216,10 +342,11 @@ z_index = 2
 
 [node name="Background2" parent="." instance=ExtResource("36_fec5s")]
 
-[node name="Player" type="Sprite2D" parent="."]
+[node name="Player" type="AnimatedSprite2D" parent="."]
 position = Vector2(322.07834, 322.92163)
-scale = Vector2(-0.21579228, 0.21579228)
-texture = ExtResource("37_hm6ng")
+scale = Vector2(0.216, 0.216)
+sprite_frames = SubResource("SpriteFrames_a7gnj")
+animation = &"new_animation"
 
 [connection signal="button_down" from="EnemyOne/EnemyOneButton" to="." method="_on_enemy_one_button_down"]
 [connection signal="button_down" from="EnemyTwo/EnemyTwoButton" to="." method="_on_enemy_two_button_down"]

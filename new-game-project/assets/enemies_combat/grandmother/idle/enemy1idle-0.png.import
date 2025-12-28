@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b4cjqcq0u8qqt"
-path="res://.godot/imported/enemy1idle-0.png-bd5eea5425b13bf6c020acdaf3ee7eb3.ctex"
+path="res://.godot/imported/enemy1idle-0.png-1cef533e85d14ee2505c3426f5104181.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/enemies_combat/grandmother/idle/enemy1idle-0.png"
-dest_files=["res://.godot/imported/enemy1idle-0.png-bd5eea5425b13bf6c020acdaf3ee7eb3.ctex"]
+source_file="res://assets/enemies_combat/grandmother/idle/enemy1idle-0.png"
+dest_files=["res://.godot/imported/enemy1idle-0.png-1cef533e85d14ee2505c3426f5104181.ctex"]
 
 [params]
 
